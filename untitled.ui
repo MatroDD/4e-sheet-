@@ -3795,7 +3795,7 @@
       <string>n/a</string>
      </property>
     </widget>
-    <widget class="QTextEdit" name="armorpenalty">
+    <widget class="QLineEdit" name="armorpenalty">
      <property name="geometry">
       <rect>
        <x>205</x>
@@ -3804,11 +3804,8 @@
        <height>23</height>
       </rect>
      </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
     </widget>
-    <widget class="QTextEdit" name="armorpenalty_2">
+    <widget class="QLineEdit" name="armorpenalty_2">
      <property name="geometry">
       <rect>
        <x>205</x>
@@ -3817,11 +3814,8 @@
        <height>23</height>
       </rect>
      </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
     </widget>
-    <widget class="QTextEdit" name="armorpenalty_3">
+    <widget class="QLineEdit" name="armorpenalty_3">
      <property name="geometry">
       <rect>
        <x>205</x>
@@ -3830,357 +3824,55 @@
        <height>23</height>
       </rect>
      </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
     </widget>
-    <widget class="QTextEdit" name="armorpenalty_4">
+    <widget class="QLineEdit" name="sk_misc">
      <property name="geometry">
       <rect>
-       <x>205</x>
-       <y>364</y>
+       <x>230</x>
+       <y>13</y>
        <width>21</width>
        <height>23</height>
       </rect>
      </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
     </widget>
-    <widget class="QTextEdit" name="armorpenalty_5">
+    <widget class="QLineEdit" name="sk_misc_2">
      <property name="geometry">
       <rect>
-       <x>205</x>
-       <y>414</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="sk_misc1_14">
-     <property name="geometry">
-      <rect>
-       <x>233</x>
-       <y>414</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="sk_misc1_13">
-     <property name="geometry">
-      <rect>
-       <x>233</x>
-       <y>364</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="sk_misc1_16">
-     <property name="geometry">
-      <rect>
-       <x>233</x>
-       <y>389</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="sk_misc1_15">
-     <property name="geometry">
-      <rect>
-       <x>233</x>
-       <y>339</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="sk_misc1_12">
-     <property name="geometry">
-      <rect>
-       <x>233</x>
-       <y>314</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="sk_misc1_10">
-     <property name="geometry">
-      <rect>
-       <x>233</x>
-       <y>264</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="sk_misc1_11">
-     <property name="geometry">
-      <rect>
-       <x>233</x>
-       <y>289</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="sk_misc1_8">
-     <property name="geometry">
-      <rect>
-       <x>233</x>
-       <y>214</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="sk_misc1_9">
-     <property name="geometry">
-      <rect>
-       <x>233</x>
-       <y>239</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="sk_misc1_7">
-     <property name="geometry">
-      <rect>
-       <x>233</x>
-       <y>189</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="sk_misc1_6">
-     <property name="geometry">
-      <rect>
-       <x>233</x>
-       <y>164</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="sk_misc1_4">
-     <property name="geometry">
-      <rect>
-       <x>233</x>
-       <y>114</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="sk_misc1_5">
-     <property name="geometry">
-      <rect>
-       <x>233</x>
-       <y>139</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="sk_misc1_3">
-     <property name="geometry">
-      <rect>
-       <x>233</x>
-       <y>89</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="sk_misc1_2">
-     <property name="geometry">
-      <rect>
-       <x>233</x>
-       <y>64</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="sk_misc1">
-     <property name="geometry">
-      <rect>
-       <x>233</x>
+       <x>230</x>
        <y>39</y>
        <width>21</width>
        <height>23</height>
       </rect>
      </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
     </widget>
-    <widget class="QTextEdit" name="sk_misc">
+    <widget class="QLineEdit" name="sk_misc_3">
      <property name="geometry">
       <rect>
-       <x>233</x>
-       <y>14</y>
+       <x>230</x>
+       <y>64</y>
        <width>21</width>
        <height>23</height>
       </rect>
      </property>
-     <property name="maximumSize">
-      <size>
+    </widget>
+    <widget class="QLineEdit" name="sk_misc_4">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>89</y>
        <width>21</width>
        <height>23</height>
-      </size>
+      </rect>
      </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+    </widget>
+    <widget class="QLineEdit" name="sk_misc_5">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>114</y>
+       <width>21</width>
+       <height>23</height>
+      </rect>
      </property>
     </widget>
    </widget>
@@ -4333,7 +4025,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../../../Downloads/Shield-PNG-Image.png</pixmap>
+      <pixmap>icon/Shield-PNG-Image.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -4396,54 +4088,6 @@
       <string/>
      </property>
     </widget>
-    <widget class="QLabel" name="armor_or_dodge">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>33</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="class_bonuses">
-     <property name="geometry">
-      <rect>
-       <x>173</x>
-       <y>33</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="class_bonuses_2">
-     <property name="geometry">
-      <rect>
-       <x>174</x>
-       <y>80</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_13">
      <property name="geometry">
       <rect>
@@ -4466,7 +4110,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../../../Downloads/Shield-PNG-Image.png</pixmap>
+      <pixmap>icon/Shield-PNG-Image.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -4479,22 +4123,6 @@
      <property name="geometry">
       <rect>
        <x>128</x>
-       <y>80</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="enh_2">
-     <property name="geometry">
-      <rect>
-       <x>220</x>
        <y>80</y>
        <width>21</width>
        <height>21</height>
@@ -4545,134 +4173,6 @@
       <string>Стойкость</string>
      </property>
     </widget>
-    <widget class="QLabel" name="misc_4">
-     <property name="geometry">
-      <rect>
-       <x>266</x>
-       <y>80</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="ability_mod">
-     <property name="geometry">
-      <rect>
-       <x>151</x>
-       <y>80</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="misc_3">
-     <property name="geometry">
-      <rect>
-       <x>243</x>
-       <y>80</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="feat_2">
-     <property name="geometry">
-      <rect>
-       <x>197</x>
-       <y>80</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="misc">
-     <property name="geometry">
-      <rect>
-       <x>242</x>
-       <y>33</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="misc_2">
-     <property name="geometry">
-      <rect>
-       <x>265</x>
-       <y>33</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="feat">
-     <property name="geometry">
-      <rect>
-       <x>196</x>
-       <y>33</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="enh">
-     <property name="geometry">
-      <rect>
-       <x>219</x>
-       <y>33</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_20">
      <property name="geometry">
       <rect>
@@ -4695,7 +4195,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../../../Downloads/Shield-PNG-Image.png</pixmap>
+      <pixmap>icon/Shield-PNG-Image.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -4708,38 +4208,6 @@
      <property name="geometry">
       <rect>
        <x>127</x>
-       <y>130</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="class_bonuses_3">
-     <property name="geometry">
-      <rect>
-       <x>173</x>
-       <y>130</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="enh_3">
-     <property name="geometry">
-      <rect>
-       <x>219</x>
        <y>130</y>
        <width>21</width>
        <height>21</height>
@@ -4790,118 +4258,6 @@
       <string>Реакция</string>
      </property>
     </widget>
-    <widget class="QLabel" name="misc_6">
-     <property name="geometry">
-      <rect>
-       <x>265</x>
-       <y>130</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="ability_mod_2">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>130</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="misc_5">
-     <property name="geometry">
-      <rect>
-       <x>242</x>
-       <y>130</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="feat_3">
-     <property name="geometry">
-      <rect>
-       <x>196</x>
-       <y>130</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="misc_7">
-     <property name="geometry">
-      <rect>
-       <x>241</x>
-       <y>181</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="misc_8">
-     <property name="geometry">
-      <rect>
-       <x>264</x>
-       <y>181</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="enh_4">
-     <property name="geometry">
-      <rect>
-       <x>218</x>
-       <y>181</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_32">
      <property name="geometry">
       <rect>
@@ -4924,7 +4280,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../../../Downloads/Shield-PNG-Image.png</pixmap>
+      <pixmap>icon/Shield-PNG-Image.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -4949,22 +4305,6 @@
       <string/>
      </property>
     </widget>
-    <widget class="QLabel" name="label_34">
-     <property name="geometry">
-      <rect>
-       <x>172</x>
-       <y>181</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
     <widget class="QPushButton" name="pushButton_18">
      <property name="geometry">
       <rect>
@@ -4976,22 +4316,6 @@
      </property>
      <property name="text">
       <string>Воля</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="ability_mod_3">
-     <property name="geometry">
-      <rect>
-       <x>149</x>
-       <y>181</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
      </property>
     </widget>
     <widget class="QLabel" name="WILL_sum">
@@ -5019,22 +4343,6 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="feat_4">
-     <property name="geometry">
-      <rect>
-       <x>195</x>
-       <y>181</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
     <widget class="Line" name="line">
      <property name="geometry">
       <rect>
@@ -5046,6 +4354,206 @@
      </property>
      <property name="orientation">
       <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="armor_dodge">
+     <property name="geometry">
+      <rect>
+       <x>152</x>
+       <y>33</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="class_bonus">
+     <property name="geometry">
+      <rect>
+       <x>174</x>
+       <y>33</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="feat_bonus">
+     <property name="geometry">
+      <rect>
+       <x>196</x>
+       <y>33</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="misc_bonus">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>33</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="enh_bonus">
+     <property name="geometry">
+      <rect>
+       <x>218</x>
+       <y>33</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="feat_bonus_2">
+     <property name="geometry">
+      <rect>
+       <x>197</x>
+       <y>80</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="enh_bonus_2">
+     <property name="geometry">
+      <rect>
+       <x>219</x>
+       <y>80</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ability_bonus">
+     <property name="geometry">
+      <rect>
+       <x>153</x>
+       <y>80</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="class_bonus_2">
+     <property name="geometry">
+      <rect>
+       <x>175</x>
+       <y>80</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="misc_bonus_2">
+     <property name="geometry">
+      <rect>
+       <x>241</x>
+       <y>80</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="feat_bonus_3">
+     <property name="geometry">
+      <rect>
+       <x>196</x>
+       <y>130</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="enh_bonus_3">
+     <property name="geometry">
+      <rect>
+       <x>218</x>
+       <y>130</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ability_bonus_2">
+     <property name="geometry">
+      <rect>
+       <x>152</x>
+       <y>130</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="class_bonus_3">
+     <property name="geometry">
+      <rect>
+       <x>174</x>
+       <y>130</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="misc_bonus_3">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>130</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="feat_bonus_4">
+     <property name="geometry">
+      <rect>
+       <x>196</x>
+       <y>181</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="enh_bonus_4">
+     <property name="geometry">
+      <rect>
+       <x>218</x>
+       <y>181</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ability_bonus_3">
+     <property name="geometry">
+      <rect>
+       <x>152</x>
+       <y>181</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="class_bonus_4">
+     <property name="geometry">
+      <rect>
+       <x>174</x>
+       <y>181</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="misc_bonus_4">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>181</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
      </property>
     </widget>
    </widget>
@@ -5128,70 +4636,6 @@
     </property>
     <property name="text">
      <string>Скорость</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="base">
-    <property name="geometry">
-     <rect>
-      <x>391</x>
-      <y>290</y>
-      <width>21</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="misc_9">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>290</y>
-      <width>21</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="item_bonus">
-    <property name="geometry">
-     <rect>
-      <x>437</x>
-      <y>290</y>
-      <width>21</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="armorpenalty_6">
-    <property name="geometry">
-     <rect>
-      <x>414</x>
-      <y>290</y>
-      <width>21</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="text">
-     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="PP_sum">
@@ -5310,38 +4754,6 @@
      <string>10</string>
     </property>
    </widget>
-   <widget class="QLabel" name="sk_perc_sum_2">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>329</y>
-      <width>21</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="sk_ins_sum_2">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>366</y>
-      <width>21</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="Line" name="line_5">
     <property name="geometry">
      <rect>
@@ -5416,6 +4828,266 @@
      <string/>
     </property>
    </widget>
+   <widget class="QLineEdit" name="armorpenalty_4">
+    <property name="geometry">
+     <rect>
+      <x>205</x>
+      <y>583</y>
+      <width>21</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="armorpenalty_5">
+    <property name="geometry">
+     <rect>
+      <x>205</x>
+      <y>634</y>
+      <width>21</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sk_misc_7">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>383</y>
+      <width>21</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sk_misc_8">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>433</y>
+      <width>21</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sk_misc_19">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>408</y>
+      <width>21</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sk_misc_9">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>458</y>
+      <width>21</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sk_misc_6">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>359</y>
+      <width>21</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sk_misc_11">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>510</y>
+      <width>21</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sk_misc_10">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>910</y>
+      <width>21</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sk_misc_13">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>559</y>
+      <width>21</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sk_misc_12">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>535</y>
+      <width>21</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sk_misc_16">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>583</y>
+      <width>21</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sk_misc_21">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>860</y>
+      <width>21</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sk_misc_15">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>834</y>
+      <width>21</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sk_misc_14">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>935</y>
+      <width>21</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sk_misc_17">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>885</y>
+      <width>21</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sk_misc_18">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>484</y>
+      <width>21</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sk_misc_22">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>609</y>
+      <width>21</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sk_misc_20">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>633</y>
+      <width>21</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="item_for_speed">
+    <property name="geometry">
+     <rect>
+      <x>437</x>
+      <y>290</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="base_speed">
+    <property name="geometry">
+     <rect>
+      <x>393</x>
+      <y>290</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="misc_speed">
+    <property name="geometry">
+     <rect>
+      <x>459</x>
+      <y>290</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="armor_penalty">
+    <property name="geometry">
+     <rect>
+      <x>415</x>
+      <y>290</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sk_perc_sum_2">
+    <property name="geometry">
+     <rect>
+      <x>507</x>
+      <y>329</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_26">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>390</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_27">
+    <property name="geometry">
+     <rect>
+      <x>508</x>
+      <y>366</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
    <zorder>label_47</zorder>
    <zorder>label_45</zorder>
    <zorder>char_name</zorder>
@@ -5435,23 +5107,43 @@
    <zorder>label_38</zorder>
    <zorder>speed_sum</zorder>
    <zorder>pushButton_19</zorder>
-   <zorder>base</zorder>
-   <zorder>misc_9</zorder>
-   <zorder>item_bonus</zorder>
-   <zorder>armorpenalty_6</zorder>
    <zorder>PP_sum</zorder>
    <zorder>pushButton_20</zorder>
    <zorder>pushButton_21</zorder>
    <zorder>PI_sum</zorder>
    <zorder>ten</zorder>
    <zorder>ten_2</zorder>
-   <zorder>sk_perc_sum_2</zorder>
-   <zorder>sk_ins_sum_2</zorder>
    <zorder>line_5</zorder>
    <zorder>line_6</zorder>
    <zorder>line_7</zorder>
    <zorder>label_52</zorder>
    <zorder>character_class</zorder>
+   <zorder>armorpenalty_4</zorder>
+   <zorder>armorpenalty_5</zorder>
+   <zorder>sk_misc_7</zorder>
+   <zorder>sk_misc_8</zorder>
+   <zorder>sk_misc_19</zorder>
+   <zorder>sk_misc_9</zorder>
+   <zorder>sk_misc_6</zorder>
+   <zorder>sk_misc_11</zorder>
+   <zorder>sk_misc_10</zorder>
+   <zorder>sk_misc_13</zorder>
+   <zorder>sk_misc_12</zorder>
+   <zorder>sk_misc_16</zorder>
+   <zorder>sk_misc_21</zorder>
+   <zorder>sk_misc_15</zorder>
+   <zorder>sk_misc_14</zorder>
+   <zorder>sk_misc_17</zorder>
+   <zorder>sk_misc_18</zorder>
+   <zorder>sk_misc_22</zorder>
+   <zorder>sk_misc_20</zorder>
+   <zorder>item_for_speed</zorder>
+   <zorder>base_speed</zorder>
+   <zorder>misc_speed</zorder>
+   <zorder>armor_penalty</zorder>
+   <zorder>sk_perc_sum_2</zorder>
+   <zorder>lineEdit_26</zorder>
+   <zorder>lineEdit_27</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
