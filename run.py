@@ -44,7 +44,14 @@ class God:
             30:10,
             31:10,
         }
-
+        self.toolTip = {
+            'str':lambda: self.ui.st_str_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.ui.st_str_origin.text()} + {self.ui.st_str_misc.text()} = {self.ui.st_str_all.text()}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
+            'dex':lambda: self.ui.st_dex_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.ui.st_dex_origin.text()} + {self.ui.st_dex_misc.text()} = {self.ui.st_dex_all.text()}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
+            'con':lambda: self.ui.st_con_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.ui.st_con_origin.text()} + {self.ui.st_con_misc.text()} = {self.ui.st_con_all.text()}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
+            'int':lambda: self.ui.st_int_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.ui.st_int_origin.text()} + {self.ui.st_int_misc.text()} = {self.ui.st_int_all.text()}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
+            'wis':lambda: self.ui.st_wis_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.ui.st_wis_origin.text()} + {self.ui.st_wis_misc.text()} = {self.ui.st_wis_all.text()}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
+            'cha':lambda: self.ui.st_cha_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.ui.st_cha_origin.text()} + {self.ui.st_cha_misc.text()} = {self.ui.st_cha_all.text()}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
+            }
         # --- Connect ---
         self.ui.st_str_origin.textChanged.connect(self.st_Str_Calc)
         self.ui.st_str_misc.textChanged.connect(self.st_Str_Calc)
@@ -65,22 +72,63 @@ class God:
                 str(int(self.ui.st_str_origin.text()) + int(self.ui.st_str_misc.text()))
                 )
             self.ui.st_str_mod.setText(str(self.help[int(self.ui.st_str_all.text())]))
+            self.toolTip['str']()
         except BaseException:
             pass
 
     def st_Dex_Calc(self):
+        try:
+            self.ui.st_dex_all.setText(
+                str(int(self.ui.st_dex_origin.text()) + int(self.ui.st_dex_misc.text()))
+                )
+            self.ui.st_dex_mod.setText(str(self.help[int(self.ui.st_dex_all.text())]))
+            self.toolTip['dex']()
+        except BaseException:
+            pass
         pass
 
     def st_Con_Calc(self):
+        try:
+            self.ui.st_con_all.setText(
+                str(int(self.ui.st_con_origin.text()) + int(self.ui.st_con_misc.text()))
+                )
+            self.ui.st_con_mod.setText(str(self.help[int(self.ui.st_con_all.text())]))
+            self.toolTip['con']()
+        except BaseException:
+            pass
         pass
 
     def st_Int_Calc(self):
+        try:
+            self.ui.st_int_all.setText(
+                str(int(self.ui.st_int_origin.text()) + int(self.ui.st_int_misc.text()))
+                )
+            self.ui.st_int_mod.setText(str(self.help[int(self.ui.st_sintall.text())]))
+            self.toolTip['int']()
+        except BaseException:
+            pass
         pass
 
     def st_Wis_Calc(self):
+        try:
+            self.ui.st_wis_all.setText(
+                str(int(self.ui.st_wis_origin.text()) + int(self.ui.wisstr_misc.text()))
+                )
+            self.ui.st_wis_mod.setText(str(self.help[int(self.ui.st_wis_all.text())]))
+            self.toolTip['wis']()
+        except BaseException:
+            pass
         pass
 
     def st_Cha_Calc(self):
+        try:
+            self.ui.st_cha_all.setText(
+                str(int(self.ui.st_cha_origin.text()) + int(self.ui.st_cha_misc.text()))
+                )
+            self.ui.st_cha_mod.setText(str(self.help[int(self.ui.st_cha_all.text())]))
+            self.toolTip['cha']()
+        except BaseException:
+            pass
         pass
 god = God()
 
