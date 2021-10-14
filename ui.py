@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'untitled.ui',
 # licensing of 'untitled.ui' applies.
 #
-# Created: Thu Oct 14 03:19:07 2021
+# Created: Thu Oct 14 04:09:17 2021
 #      by: pyside2-uic  running on PySide2 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -106,16 +106,16 @@ class Ui_MainWindow(object):
         self.st_str_origin.setMaxLength(2)
         self.st_str_origin.setAlignment(QtCore.Qt.AlignCenter)
         self.st_str_origin.setObjectName("st_str_origin")
-        self.st_srt_mod = QtWidgets.QLabel(self.groupBox_11)
-        self.st_srt_mod.setGeometry(QtCore.QRect(107, 14, 22, 20))
+        self.st_str_mod = QtWidgets.QLabel(self.groupBox_11)
+        self.st_str_mod.setGeometry(QtCore.QRect(107, 14, 22, 20))
         font = QtGui.QFont()
         font.setPointSize(8)
         font.setWeight(75)
         font.setBold(True)
-        self.st_srt_mod.setFont(font)
-        self.st_srt_mod.setFrameShape(QtWidgets.QFrame.Box)
-        self.st_srt_mod.setAlignment(QtCore.Qt.AlignCenter)
-        self.st_srt_mod.setObjectName("st_srt_mod")
+        self.st_str_mod.setFont(font)
+        self.st_str_mod.setFrameShape(QtWidgets.QFrame.Box)
+        self.st_str_mod.setAlignment(QtCore.Qt.AlignCenter)
+        self.st_str_mod.setObjectName("st_str_mod")
         self.st_str_misc = QtWidgets.QLineEdit(self.groupBox_11)
         self.st_str_misc.setGeometry(QtCore.QRect(59, 14, 22, 20))
         self.st_str_misc.setMaxLength(2)
@@ -346,7 +346,7 @@ class Ui_MainWindow(object):
         self.label_12.setText(QtWidgets.QApplication.translate("MainWindow", "<html><head/><body><p><span style=\" color:#00aa7f;\">+1</span></p></body></html>", None, -1))
         self.groupBox_11.setTitle(QtWidgets.QApplication.translate("MainWindow", "Статы", None, -1))
         self.st_str_origin.setText(QtWidgets.QApplication.translate("MainWindow", "8", None, -1))
-        self.st_srt_mod.setText(QtWidgets.QApplication.translate("MainWindow", "-1", None, -1))
+        self.st_str_mod.setText(QtWidgets.QApplication.translate("MainWindow", "-1", None, -1))
         self.st_str_misc.setText(QtWidgets.QApplication.translate("MainWindow", "0", None, -1))
         self.st_str_all.setToolTip(QtWidgets.QApplication.translate("MainWindow", "<html><head/><body><p>Итоговый стат: <span style=\" font-weight:400;\">8 + 0 = 8</span><br/>Формула: <span style=\" font-weight:400;\">&lt;БазовыйСтат&gt; + &lt;</span><span style=\" font-weight:400; color:#000000;\">ВременныйМод</span><span style=\" font-weight:400;\">&gt; = &lt;ИтоговыйСтат&gt;</span></p></body></html>", None, -1))
         self.st_str_all.setText(QtWidgets.QApplication.translate("MainWindow", "8", None, -1))

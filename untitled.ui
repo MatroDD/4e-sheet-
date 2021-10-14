@@ -331,7 +331,7 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="st_srt_mod">
+    <widget class="QLabel" name="st_str_mod">
      <property name="geometry">
       <rect>
        <x>107</x>

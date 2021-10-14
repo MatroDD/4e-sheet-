@@ -60,10 +60,13 @@ class God:
         self.ui.st_cha_misc.textChanged.connect(self.st_Cha_Calc)
 
     def st_Str_Calc(self):
-        self.ui.st_str_all.setText(
-            self.ui.st_srt_origin.text()
-            )
-        pass
+        try:
+            self.ui.st_str_all.setText(
+                str(int(self.ui.st_str_origin.text()) + int(self.ui.st_str_misc.text()))
+                )
+            self.ui.st_str_mod.setText(str(self.help[int(self.ui.st_str_all.text())]))
+        except BaseException:
+            pass
 
     def st_Dex_Calc(self):
         pass
@@ -79,7 +82,7 @@ class God:
 
     def st_Cha_Calc(self):
         pass
-# god = God()
+god = God()
 
 MainWindow.show()
 sys.exit(app.exec_())
