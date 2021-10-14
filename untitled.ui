@@ -37,7 +37,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>50</y>
+      <y>70</y>
       <width>133</width>
       <height>144</height>
      </rect>
@@ -144,19 +144,6 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_7">
-     <property name="geometry">
-      <rect>
-       <x>2</x>
-       <y>34</y>
-       <width>32</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>ЛОВ</string>
-     </property>
-    </widget>
     <widget class="QPushButton" name="pushButton_13">
      <property name="geometry">
       <rect>
@@ -174,7 +161,7 @@
      <property name="geometry">
       <rect>
        <x>2</x>
-       <y>55</y>
+       <y>34</y>
        <width>32</width>
        <height>22</height>
       </rect>
@@ -222,101 +209,11 @@
       <string>ХАР</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="st_dex_misc">
-     <property name="geometry">
-      <rect>
-       <x>59</x>
-       <y>35</y>
-       <width>22</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>0</string>
-     </property>
-     <property name="maxLength">
-      <number>2</number>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="st_dex_all">
-     <property name="geometry">
-      <rect>
-       <x>83</x>
-       <y>35</y>
-       <width>22</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string>8</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="st_dex_origin">
-     <property name="geometry">
-      <rect>
-       <x>35</x>
-       <y>35</y>
-       <width>22</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>8</string>
-     </property>
-     <property name="maxLength">
-      <number>2</number>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="st_dex_mod">
-     <property name="geometry">
-      <rect>
-       <x>107</x>
-       <y>35</y>
-       <width>22</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::WinPanel</enum>
-     </property>
-     <property name="text">
-      <string>-1</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
     <widget class="QLineEdit" name="st_con_misc">
      <property name="geometry">
       <rect>
        <x>59</x>
-       <y>56</y>
+       <y>35</y>
        <width>22</width>
        <height>20</height>
       </rect>
@@ -335,7 +232,7 @@
      <property name="geometry">
       <rect>
        <x>83</x>
-       <y>56</y>
+       <y>35</y>
        <width>22</width>
        <height>20</height>
       </rect>
@@ -361,7 +258,7 @@
      <property name="geometry">
       <rect>
        <x>35</x>
-       <y>56</y>
+       <y>35</y>
        <width>22</width>
        <height>20</height>
       </rect>
@@ -380,7 +277,7 @@
      <property name="geometry">
       <rect>
        <x>107</x>
-       <y>56</y>
+       <y>35</y>
        <width>22</width>
        <height>20</height>
       </rect>
@@ -709,8 +606,8 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>200</y>
-      <width>301</width>
+      <y>220</y>
+      <width>261</width>
       <height>481</height>
      </rect>
     </property>
@@ -2384,588 +2281,10 @@
       <string/>
      </property>
     </widget>
-    <widget class="QLabel" name="halflevel_15">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>189</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>21</width>
-       <height>21</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="baseSize">
-      <size>
-       <width>23</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="halflevel_3">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>64</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>21</width>
-       <height>21</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="baseSize">
-      <size>
-       <width>23</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="halflevel_14">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>214</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>21</width>
-       <height>21</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="baseSize">
-      <size>
-       <width>23</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="halflevel_17">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>264</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>21</width>
-       <height>21</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="baseSize">
-      <size>
-       <width>23</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="halflevel_4">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>89</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>21</width>
-       <height>21</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="baseSize">
-      <size>
-       <width>23</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="halflevel_13">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>289</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>21</width>
-       <height>21</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="baseSize">
-      <size>
-       <width>23</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="halflevel_6">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>139</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>21</width>
-       <height>21</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="baseSize">
-      <size>
-       <width>23</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="halflevel_7">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>339</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>21</width>
-       <height>21</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>16777215</height>
-      </size>
-     </property>
-     <property name="baseSize">
-      <size>
-       <width>23</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="halflevel_8">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>164</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>21</width>
-       <height>21</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="baseSize">
-      <size>
-       <width>23</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="halflevel">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>14</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>21</width>
-       <height>21</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="baseSize">
-      <size>
-       <width>23</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="halflevel_9">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>364</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>21</width>
-       <height>21</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="baseSize">
-      <size>
-       <width>23</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="halflevel_10">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>389</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>21</width>
-       <height>21</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="baseSize">
-      <size>
-       <width>23</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="halflevel_11">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>314</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>21</width>
-       <height>21</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="baseSize">
-      <size>
-       <width>23</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="halflevel_5">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>114</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>21</width>
-       <height>21</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="baseSize">
-      <size>
-       <width>23</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="halflevel_2">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>39</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>21</width>
-       <height>21</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="baseSize">
-      <size>
-       <width>23</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="halflevel_16">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>239</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>21</width>
-       <height>21</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="baseSize">
-      <size>
-       <width>23</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="halflevel_12">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>414</y>
-       <width>21</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>21</width>
-       <height>21</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>21</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="baseSize">
-      <size>
-       <width>23</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
     <widget class="QCheckBox" name="istrained">
      <property name="geometry">
       <rect>
-       <x>175</x>
+       <x>150</x>
        <y>14</y>
        <width>51</width>
        <height>21</height>
@@ -3020,7 +2339,7 @@
     <widget class="QCheckBox" name="istrained_2">
      <property name="geometry">
       <rect>
-       <x>175</x>
+       <x>150</x>
        <y>39</y>
        <width>51</width>
        <height>21</height>
@@ -3075,7 +2394,7 @@
     <widget class="QCheckBox" name="istrained_3">
      <property name="geometry">
       <rect>
-       <x>175</x>
+       <x>150</x>
        <y>64</y>
        <width>51</width>
        <height>21</height>
@@ -3130,7 +2449,7 @@
     <widget class="QCheckBox" name="istrained_4">
      <property name="geometry">
       <rect>
-       <x>175</x>
+       <x>150</x>
        <y>89</y>
        <width>51</width>
        <height>21</height>
@@ -3185,7 +2504,7 @@
     <widget class="QCheckBox" name="istrained_5">
      <property name="geometry">
       <rect>
-       <x>175</x>
+       <x>150</x>
        <y>114</y>
        <width>51</width>
        <height>21</height>
@@ -3240,7 +2559,7 @@
     <widget class="QCheckBox" name="istrained_7">
      <property name="geometry">
       <rect>
-       <x>175</x>
+       <x>150</x>
        <y>140</y>
        <width>51</width>
        <height>21</height>
@@ -3295,7 +2614,7 @@
     <widget class="QCheckBox" name="istrained_8">
      <property name="geometry">
       <rect>
-       <x>175</x>
+       <x>150</x>
        <y>164</y>
        <width>51</width>
        <height>21</height>
@@ -3350,7 +2669,7 @@
     <widget class="QCheckBox" name="istrained_9">
      <property name="geometry">
       <rect>
-       <x>175</x>
+       <x>150</x>
        <y>189</y>
        <width>51</width>
        <height>21</height>
@@ -3405,7 +2724,7 @@
     <widget class="QCheckBox" name="istrained_12">
      <property name="geometry">
       <rect>
-       <x>175</x>
+       <x>150</x>
        <y>214</y>
        <width>51</width>
        <height>21</height>
@@ -3460,7 +2779,7 @@
     <widget class="QCheckBox" name="istrained_10">
      <property name="geometry">
       <rect>
-       <x>175</x>
+       <x>150</x>
        <y>239</y>
        <width>51</width>
        <height>21</height>
@@ -3515,7 +2834,7 @@
     <widget class="QCheckBox" name="istrained_16">
      <property name="geometry">
       <rect>
-       <x>175</x>
+       <x>150</x>
        <y>264</y>
        <width>51</width>
        <height>21</height>
@@ -3570,7 +2889,7 @@
     <widget class="QCheckBox" name="istrained_6">
      <property name="geometry">
       <rect>
-       <x>175</x>
+       <x>150</x>
        <y>289</y>
        <width>51</width>
        <height>21</height>
@@ -3625,7 +2944,7 @@
     <widget class="QCheckBox" name="istrained_15">
      <property name="geometry">
       <rect>
-       <x>175</x>
+       <x>150</x>
        <y>314</y>
        <width>51</width>
        <height>21</height>
@@ -3680,7 +2999,7 @@
     <widget class="QCheckBox" name="istrained_14">
      <property name="geometry">
       <rect>
-       <x>175</x>
+       <x>150</x>
        <y>339</y>
        <width>51</width>
        <height>21</height>
@@ -3735,7 +3054,7 @@
     <widget class="QCheckBox" name="istrained_17">
      <property name="geometry">
       <rect>
-       <x>175</x>
+       <x>150</x>
        <y>364</y>
        <width>51</width>
        <height>21</height>
@@ -3790,7 +3109,7 @@
     <widget class="QCheckBox" name="istrained_13">
      <property name="geometry">
       <rect>
-       <x>175</x>
+       <x>150</x>
        <y>389</y>
        <width>51</width>
        <height>21</height>
@@ -3845,7 +3164,7 @@
     <widget class="QCheckBox" name="istrained_11">
      <property name="geometry">
       <rect>
-       <x>175</x>
+       <x>150</x>
        <y>414</y>
        <width>51</width>
        <height>21</height>
@@ -3900,7 +3219,7 @@
     <widget class="QLabel" name="noarmorpenalty">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>205</x>
        <y>39</y>
        <width>21</width>
        <height>23</height>
@@ -3934,7 +3253,7 @@
     <widget class="QLabel" name="noarmorpenalty_2">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>205</x>
        <y>89</y>
        <width>21</width>
        <height>23</height>
@@ -3968,7 +3287,7 @@
     <widget class="QLabel" name="noarmorpenalty_4">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>205</x>
        <y>114</y>
        <width>21</width>
        <height>23</height>
@@ -4002,7 +3321,7 @@
     <widget class="QLabel" name="noarmorpenalty_10">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>205</x>
        <y>139</y>
        <width>21</width>
        <height>23</height>
@@ -4036,7 +3355,7 @@
     <widget class="QLabel" name="noarmorpenalty_8">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>205</x>
        <y>189</y>
        <width>21</width>
        <height>23</height>
@@ -4070,7 +3389,7 @@
     <widget class="QLabel" name="noarmorpenalty_9">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>205</x>
        <y>214</y>
        <width>21</width>
        <height>23</height>
@@ -4104,7 +3423,7 @@
     <widget class="QLabel" name="noarmorpenalty_5">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>205</x>
        <y>239</y>
        <width>21</width>
        <height>23</height>
@@ -4138,7 +3457,7 @@
     <widget class="QLabel" name="noarmorpenalty_6">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>205</x>
        <y>264</y>
        <width>21</width>
        <height>23</height>
@@ -4172,7 +3491,7 @@
     <widget class="QLabel" name="noarmorpenalty_11">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>205</x>
        <y>289</y>
        <width>21</width>
        <height>23</height>
@@ -4206,7 +3525,7 @@
     <widget class="QLabel" name="noarmorpenalty_7">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>205</x>
        <y>339</y>
        <width>21</width>
        <height>23</height>
@@ -4240,7 +3559,7 @@
     <widget class="QLabel" name="noarmorpenalty_12">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>205</x>
        <y>314</y>
        <width>21</width>
        <height>23</height>
@@ -4274,7 +3593,7 @@
     <widget class="QLabel" name="noarmorpenalty_3">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>205</x>
        <y>389</y>
        <width>21</width>
        <height>23</height>
@@ -4308,7 +3627,7 @@
     <widget class="QTextEdit" name="armorpenalty">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>205</x>
        <y>14</y>
        <width>21</width>
        <height>23</height>
@@ -4318,7 +3637,7 @@
     <widget class="QTextEdit" name="armorpenalty_2">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>205</x>
        <y>64</y>
        <width>21</width>
        <height>23</height>
@@ -4328,7 +3647,7 @@
     <widget class="QTextEdit" name="armorpenalty_3">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>205</x>
        <y>164</y>
        <width>21</width>
        <height>23</height>
@@ -4338,7 +3657,7 @@
     <widget class="QTextEdit" name="armorpenalty_4">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>205</x>
        <y>364</y>
        <width>21</width>
        <height>23</height>
@@ -4348,7 +3667,7 @@
     <widget class="QTextEdit" name="armorpenalty_5">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>205</x>
        <y>414</y>
        <width>21</width>
        <height>23</height>
@@ -4358,7 +3677,7 @@
     <widget class="QTextEdit" name="sk_misc1_14">
      <property name="geometry">
       <rect>
-       <x>258</x>
+       <x>233</x>
        <y>414</y>
        <width>21</width>
        <height>23</height>
@@ -4374,7 +3693,7 @@
     <widget class="QTextEdit" name="sk_misc1_13">
      <property name="geometry">
       <rect>
-       <x>258</x>
+       <x>233</x>
        <y>364</y>
        <width>21</width>
        <height>23</height>
@@ -4390,7 +3709,7 @@
     <widget class="QTextEdit" name="sk_misc1_16">
      <property name="geometry">
       <rect>
-       <x>258</x>
+       <x>233</x>
        <y>389</y>
        <width>21</width>
        <height>23</height>
@@ -4406,7 +3725,7 @@
     <widget class="QTextEdit" name="sk_misc1_15">
      <property name="geometry">
       <rect>
-       <x>258</x>
+       <x>233</x>
        <y>339</y>
        <width>21</width>
        <height>23</height>
@@ -4422,7 +3741,7 @@
     <widget class="QTextEdit" name="sk_misc1_12">
      <property name="geometry">
       <rect>
-       <x>258</x>
+       <x>233</x>
        <y>314</y>
        <width>21</width>
        <height>23</height>
@@ -4438,7 +3757,7 @@
     <widget class="QTextEdit" name="sk_misc1_10">
      <property name="geometry">
       <rect>
-       <x>258</x>
+       <x>233</x>
        <y>264</y>
        <width>21</width>
        <height>23</height>
@@ -4454,7 +3773,7 @@
     <widget class="QTextEdit" name="sk_misc1_11">
      <property name="geometry">
       <rect>
-       <x>258</x>
+       <x>233</x>
        <y>289</y>
        <width>21</width>
        <height>23</height>
@@ -4470,7 +3789,7 @@
     <widget class="QTextEdit" name="sk_misc1_8">
      <property name="geometry">
       <rect>
-       <x>258</x>
+       <x>233</x>
        <y>214</y>
        <width>21</width>
        <height>23</height>
@@ -4486,7 +3805,7 @@
     <widget class="QTextEdit" name="sk_misc1_9">
      <property name="geometry">
       <rect>
-       <x>258</x>
+       <x>233</x>
        <y>239</y>
        <width>21</width>
        <height>23</height>
@@ -4502,7 +3821,7 @@
     <widget class="QTextEdit" name="sk_misc1_7">
      <property name="geometry">
       <rect>
-       <x>258</x>
+       <x>233</x>
        <y>189</y>
        <width>21</width>
        <height>23</height>
@@ -4518,7 +3837,7 @@
     <widget class="QTextEdit" name="sk_misc1_6">
      <property name="geometry">
       <rect>
-       <x>258</x>
+       <x>233</x>
        <y>164</y>
        <width>21</width>
        <height>23</height>
@@ -4534,7 +3853,7 @@
     <widget class="QTextEdit" name="sk_misc1_4">
      <property name="geometry">
       <rect>
-       <x>258</x>
+       <x>233</x>
        <y>114</y>
        <width>21</width>
        <height>23</height>
@@ -4550,7 +3869,7 @@
     <widget class="QTextEdit" name="sk_misc1_5">
      <property name="geometry">
       <rect>
-       <x>258</x>
+       <x>233</x>
        <y>139</y>
        <width>21</width>
        <height>23</height>
@@ -4566,7 +3885,7 @@
     <widget class="QTextEdit" name="sk_misc1_3">
      <property name="geometry">
       <rect>
-       <x>258</x>
+       <x>233</x>
        <y>89</y>
        <width>21</width>
        <height>23</height>
@@ -4582,7 +3901,7 @@
     <widget class="QTextEdit" name="sk_misc1_2">
      <property name="geometry">
       <rect>
-       <x>258</x>
+       <x>233</x>
        <y>64</y>
        <width>21</width>
        <height>23</height>
@@ -4598,7 +3917,7 @@
     <widget class="QTextEdit" name="sk_misc1">
      <property name="geometry">
       <rect>
-       <x>258</x>
+       <x>233</x>
        <y>39</y>
        <width>21</width>
        <height>23</height>
@@ -4614,7 +3933,7 @@
     <widget class="QTextEdit" name="sk_misc">
      <property name="geometry">
       <rect>
-       <x>258</x>
+       <x>233</x>
        <y>14</y>
        <width>21</width>
        <height>23</height>
@@ -4627,6 +3946,109 @@
       </size>
      </property>
     </widget>
+   </widget>
+   <widget class="QLabel" name="st_dex_mod">
+    <property name="geometry">
+     <rect>
+      <x>117</x>
+      <y>126</y>
+      <width>22</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="text">
+     <string>-1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>125</y>
+      <width>32</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ЛОВ</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="st_dex_misc">
+    <property name="geometry">
+     <rect>
+      <x>69</x>
+      <y>126</y>
+      <width>22</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="maxLength">
+     <number>2</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="st_dex_origin">
+    <property name="geometry">
+     <rect>
+      <x>45</x>
+      <y>126</y>
+      <width>22</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>8</string>
+    </property>
+    <property name="maxLength">
+     <number>2</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="st_dex_all">
+    <property name="geometry">
+     <rect>
+      <x>93</x>
+      <y>126</y>
+      <width>22</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>8</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
