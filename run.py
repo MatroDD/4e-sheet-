@@ -73,6 +73,20 @@ class God:
         self.ui.st_cha_origin.textChanged.connect(self.st_Cha_Calc)
         self.ui.st_cha_misc.textChanged.connect(self.st_Cha_Calc)
 
+        # --- Костыле-инициализация ---
+        self.ui.st_str_origin.setText('8')
+        self.ui.st_dex_origin.setText('8')
+        self.ui.st_con_origin.setText('8')
+        self.ui.st_int_origin.setText('8')
+        self.ui.st_wis_origin.setText('8')
+        self.ui.st_cha_origin.setText('8')
+        self.st_Str_Calc()
+        self.st_Dex_Calc()
+        self.st_Con_Calc()
+        self.st_Int_Calc()
+        self.st_Wis_Calc()
+        self.st_Cha_Calc()
+
     # Функции подсчёта статов
     def st_Str_Calc(self):
         # Вход в блок исключений, чтобы не класть ошибки если вловим хуйню
@@ -117,7 +131,7 @@ class God:
             self.ui.st_int_all.setText(
                 str(int(self.ui.st_int_origin.text()) + int(self.ui.st_int_misc.text()))
                 )
-            self.ui.st_int_mod.setText(str(self.help[int(self.ui.st_sintall.text())]))
+            self.ui.st_int_mod.setText(str(self.help[int(self.ui.st_int_all.text())]))
             self.toolTip['int']()
         except BaseException:
             pass
@@ -126,7 +140,7 @@ class God:
     def st_Wis_Calc(self):
         try:
             self.ui.st_wis_all.setText(
-                str(int(self.ui.st_wis_origin.text()) + int(self.ui.wisstr_misc.text()))
+                str(int(self.ui.st_wis_origin.text()) + int(self.ui.st_wis_misc.text()))
                 )
             self.ui.st_wis_mod.setText(str(self.help[int(self.ui.st_wis_all.text())]))
             self.toolTip['wis']()
