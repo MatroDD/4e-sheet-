@@ -622,7 +622,7 @@
      <string>Уровень:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="LvL">
+   <widget class="QLineEdit" name="lvl">
     <property name="geometry">
      <rect>
       <x>553</x>
