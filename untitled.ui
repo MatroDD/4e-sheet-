@@ -632,7 +632,10 @@
      </rect>
     </property>
     <property name="text">
-     <string/>
+     <string>1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QGroupBox" name="skills">
@@ -3804,6 +3807,12 @@
        <height>23</height>
       </rect>
      </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLineEdit" name="armorpenalty_2">
      <property name="geometry">
@@ -3813,6 +3822,12 @@
        <width>21</width>
        <height>23</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="armorpenalty_3">
@@ -3824,6 +3839,12 @@
        <height>23</height>
       </rect>
      </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLineEdit" name="sk_misc">
      <property name="geometry">
@@ -3833,6 +3854,12 @@
        <width>21</width>
        <height>23</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="sk_misc_2">
@@ -3844,6 +3871,12 @@
        <height>23</height>
       </rect>
      </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLineEdit" name="sk_misc_3">
      <property name="geometry">
@@ -3853,6 +3886,12 @@
        <width>21</width>
        <height>23</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="sk_misc_4">
@@ -3864,6 +3903,12 @@
        <height>23</height>
       </rect>
      </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLineEdit" name="sk_misc_5">
      <property name="geometry">
@@ -3873,6 +3918,12 @@
        <width>21</width>
        <height>23</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="Line" name="line_2">
@@ -4378,6 +4429,12 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLineEdit" name="class_bonus">
      <property name="geometry">
@@ -4387,6 +4444,12 @@
        <width>21</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="feat_bonus">
@@ -4398,6 +4461,12 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLineEdit" name="misc_bonus">
      <property name="geometry">
@@ -4407,6 +4476,12 @@
        <width>21</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="enh_bonus">
@@ -4418,6 +4493,12 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLineEdit" name="feat_bonus_2">
      <property name="geometry">
@@ -4427,6 +4508,12 @@
        <width>21</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="enh_bonus_2">
@@ -4438,6 +4525,12 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLineEdit" name="ability_bonus">
      <property name="geometry">
@@ -4447,6 +4540,12 @@
        <width>21</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="class_bonus_2">
@@ -4458,6 +4557,12 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLineEdit" name="misc_bonus_2">
      <property name="geometry">
@@ -4467,6 +4572,12 @@
        <width>21</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="feat_bonus_3">
@@ -4478,6 +4589,12 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLineEdit" name="enh_bonus_3">
      <property name="geometry">
@@ -4487,6 +4604,12 @@
        <width>21</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="ability_bonus_2">
@@ -4498,6 +4621,12 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLineEdit" name="class_bonus_3">
      <property name="geometry">
@@ -4507,6 +4636,12 @@
        <width>21</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="misc_bonus_3">
@@ -4518,6 +4653,12 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLineEdit" name="feat_bonus_4">
      <property name="geometry">
@@ -4527,6 +4668,12 @@
        <width>21</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="enh_bonus_4">
@@ -4538,6 +4685,12 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLineEdit" name="ability_bonus_3">
      <property name="geometry">
@@ -4547,6 +4700,12 @@
        <width>21</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="class_bonus_4">
@@ -4558,6 +4717,12 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLineEdit" name="misc_bonus_4">
      <property name="geometry">
@@ -4567,6 +4732,12 @@
        <width>21</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
    </widget>
@@ -4640,6 +4811,12 @@
       <height>23</height>
      </rect>
     </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QLineEdit" name="armorpenalty_5">
     <property name="geometry">
@@ -4649,6 +4826,12 @@
       <width>21</width>
       <height>23</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLineEdit" name="sk_misc_7">
@@ -4660,6 +4843,12 @@
       <height>23</height>
      </rect>
     </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QLineEdit" name="sk_misc_8">
     <property name="geometry">
@@ -4669,6 +4858,12 @@
       <width>21</width>
       <height>23</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLineEdit" name="sk_misc_19">
@@ -4680,6 +4875,12 @@
       <height>23</height>
      </rect>
     </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QLineEdit" name="sk_misc_9">
     <property name="geometry">
@@ -4689,6 +4890,12 @@
       <width>21</width>
       <height>23</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLineEdit" name="sk_misc_6">
@@ -4700,6 +4907,12 @@
       <height>23</height>
      </rect>
     </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QLineEdit" name="sk_misc_11">
     <property name="geometry">
@@ -4709,6 +4922,12 @@
       <width>21</width>
       <height>23</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLineEdit" name="sk_misc_10">
@@ -4730,6 +4949,12 @@
       <height>23</height>
      </rect>
     </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QLineEdit" name="sk_misc_12">
     <property name="geometry">
@@ -4740,6 +4965,12 @@
       <height>23</height>
      </rect>
     </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QLineEdit" name="sk_misc_16">
     <property name="geometry">
@@ -4749,6 +4980,12 @@
       <width>21</width>
       <height>23</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLineEdit" name="sk_misc_21">
@@ -4800,6 +5037,12 @@
       <height>23</height>
      </rect>
     </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QLineEdit" name="sk_misc_22">
     <property name="geometry">
@@ -4810,6 +5053,12 @@
       <height>23</height>
      </rect>
     </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QLineEdit" name="sk_misc_20">
     <property name="geometry">
@@ -4819,6 +5068,12 @@
       <width>21</width>
       <height>23</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QGroupBox" name="groupBox_2">
@@ -4895,6 +5150,12 @@
        <width>60</width>
        <height>40</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="max_HP_2">
@@ -5020,6 +5281,12 @@
        <height>25</height>
       </rect>
      </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_3">
@@ -5049,6 +5316,12 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="label_47">
      <property name="geometry">
@@ -5075,6 +5348,12 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="speed_sum">
      <property name="geometry">
@@ -5097,6 +5376,12 @@
        <width>21</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_45">
@@ -5149,6 +5434,12 @@
        <width>21</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_38">
@@ -5205,6 +5496,12 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QPushButton" name="pushButton_19">
      <property name="geometry">
@@ -5240,6 +5537,12 @@
        <width>21</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="ten">

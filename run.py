@@ -74,12 +74,7 @@ class God:
         self.ui.st_cha_misc.textChanged.connect(self.st_Cha_Calc)
 
         self.ui.max_HP.textChanged.connect(self.misc_HP_Calc)
-        self.ui.bloodied.textChanged.connect(self.misc_HP_Calc)
-        self.ui.surge_value.textChanged.connect(self.misc_HP_Calc)
-        self.ui.surges_per_day.textChanged.connect(self.misc_HP_Calc)
         self.ui.current_HP.textChanged.connect(self.misc_HP_Calc)
-        self.ui.max_HP_2.textChanged.connect(self.misc_HP_Calc)
-
         # --- Костыле-инициализация ---
         self.ui.st_str_origin.setText('8')
         self.ui.st_dex_origin.setText('8')
