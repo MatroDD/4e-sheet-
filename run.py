@@ -23,15 +23,15 @@ class Sheet:
 
         self.lvl = int(self.ui.lvl.text())
         # Создаём классы атрибутов
-        self.st_str = cls.Str(self)
-        self.st_dex = cls.Dex(self)
-        self.st_con = cls.Con(self)
-        self.st_int = cls.Int(self)
-        self.st_wis = cls.Wis(self)
-        self.st_cha = cls.Cha(self)
+        self.st_str = cls.st_Str(self)
+        self.st_dex = cls.st_Dex(self)
+        self.st_con = cls.st_Con(self)
+        self.st_int = cls.st_Int(self)
+        self.st_wis = cls.st_Wis(self)
+        self.st_cha = cls.st_Cha(self)
 
         # Создаём классы навыков
-        self.sk_acr = cls.Acrobatic(self)
+        self.sk_acr = cls.sk_Acr(self)
 
         # --- Connect ---
         # Добавляем к полям ввода статов и модификаторов событие "если изменён текст"
