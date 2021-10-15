@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1200</width>
-    <height>700</height>
+    <height>697</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -3355,7 +3355,7 @@
      <property name="geometry">
       <rect>
        <x>205</x>
-       <y>39</y>
+       <y>38</y>
        <width>21</width>
        <height>23</height>
       </rect>
@@ -3392,7 +3392,7 @@
      <property name="geometry">
       <rect>
        <x>205</x>
-       <y>89</y>
+       <y>88</y>
        <width>21</width>
        <height>23</height>
       </rect>
@@ -3429,7 +3429,7 @@
      <property name="geometry">
       <rect>
        <x>205</x>
-       <y>114</y>
+       <y>113</y>
        <width>21</width>
        <height>23</height>
       </rect>
@@ -3466,7 +3466,7 @@
      <property name="geometry">
       <rect>
        <x>205</x>
-       <y>139</y>
+       <y>138</y>
        <width>21</width>
        <height>23</height>
       </rect>
@@ -3503,7 +3503,7 @@
      <property name="geometry">
       <rect>
        <x>205</x>
-       <y>189</y>
+       <y>188</y>
        <width>21</width>
        <height>23</height>
       </rect>
@@ -3540,7 +3540,7 @@
      <property name="geometry">
       <rect>
        <x>205</x>
-       <y>214</y>
+       <y>213</y>
        <width>21</width>
        <height>23</height>
       </rect>
@@ -3577,7 +3577,7 @@
      <property name="geometry">
       <rect>
        <x>205</x>
-       <y>239</y>
+       <y>238</y>
        <width>21</width>
        <height>23</height>
       </rect>
@@ -3614,7 +3614,7 @@
      <property name="geometry">
       <rect>
        <x>205</x>
-       <y>264</y>
+       <y>263</y>
        <width>21</width>
        <height>23</height>
       </rect>
@@ -3651,7 +3651,7 @@
      <property name="geometry">
       <rect>
        <x>205</x>
-       <y>289</y>
+       <y>288</y>
        <width>21</width>
        <height>23</height>
       </rect>
@@ -3688,7 +3688,7 @@
      <property name="geometry">
       <rect>
        <x>205</x>
-       <y>339</y>
+       <y>338</y>
        <width>21</width>
        <height>23</height>
       </rect>
@@ -3725,7 +3725,7 @@
      <property name="geometry">
       <rect>
        <x>205</x>
-       <y>314</y>
+       <y>313</y>
        <width>21</width>
        <height>23</height>
       </rect>
@@ -3762,7 +3762,7 @@
      <property name="geometry">
       <rect>
        <x>205</x>
-       <y>389</y>
+       <y>388</y>
        <width>21</width>
        <height>23</height>
       </rect>
@@ -3799,7 +3799,7 @@
      <property name="geometry">
       <rect>
        <x>205</x>
-       <y>14</y>
+       <y>13</y>
        <width>21</width>
        <height>23</height>
       </rect>
@@ -3809,7 +3809,7 @@
      <property name="geometry">
       <rect>
        <x>205</x>
-       <y>64</y>
+       <y>63</y>
        <width>21</width>
        <height>23</height>
       </rect>
@@ -3819,7 +3819,7 @@
      <property name="geometry">
       <rect>
        <x>205</x>
-       <y>164</y>
+       <y>163</y>
        <width>21</width>
        <height>23</height>
       </rect>
@@ -3873,6 +3873,19 @@
        <width>21</width>
        <height>23</height>
       </rect>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>0</y>
+       <width>20</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
      </property>
     </widget>
    </widget>
@@ -4557,32 +4570,6 @@
      </property>
     </widget>
    </widget>
-   <widget class="Line" name="line_2">
-    <property name="geometry">
-     <rect>
-      <x>253</x>
-      <y>227</y>
-      <width>16</width>
-      <height>151</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
-    </property>
-   </widget>
-   <widget class="Line" name="line_3">
-    <property name="geometry">
-     <rect>
-      <x>262</x>
-      <y>270</y>
-      <width>291</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
    <widget class="Line" name="line_4">
     <property name="geometry">
      <rect>
@@ -4596,164 +4583,6 @@
      <enum>Qt::Vertical</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="label_38">
-    <property name="geometry">
-     <rect>
-      <x>274</x>
-      <y>284</y>
-      <width>41</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="speed_sum">
-    <property name="geometry">
-     <rect>
-      <x>283</x>
-      <y>288</y>
-      <width>23</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_19">
-    <property name="geometry">
-     <rect>
-      <x>315</x>
-      <y>289</y>
-      <width>75</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Скорость</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="PP_sum">
-    <property name="geometry">
-     <rect>
-      <x>283</x>
-      <y>327</y>
-      <width>23</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_45">
-    <property name="geometry">
-     <rect>
-      <x>274</x>
-      <y>323</y>
-      <width>41</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_20">
-    <property name="geometry">
-     <rect>
-      <x>315</x>
-      <y>328</y>
-      <width>161</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Пассивная внимательность</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_21">
-    <property name="geometry">
-     <rect>
-      <x>315</x>
-      <y>366</y>
-      <width>161</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Пассивная проницательность</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="PI_sum">
-    <property name="geometry">
-     <rect>
-      <x>283</x>
-      <y>365</y>
-      <width>23</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_47">
-    <property name="geometry">
-     <rect>
-      <x>274</x>
-      <y>361</y>
-      <width>41</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="ten">
-    <property name="geometry">
-     <rect>
-      <x>479</x>
-      <y>328</y>
-      <width>23</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="text">
-     <string>10</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="ten_2">
-    <property name="geometry">
-     <rect>
-      <x>480</x>
-      <y>365</y>
-      <width>23</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="text">
-     <string>10</string>
-    </property>
-   </widget>
    <widget class="Line" name="line_5">
     <property name="geometry">
      <rect>
@@ -4765,19 +4594,6 @@
     </property>
     <property name="orientation">
      <enum>Qt::Vertical</enum>
-    </property>
-   </widget>
-   <widget class="Line" name="line_6">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>400</y>
-      <width>291</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
     </property>
    </widget>
    <widget class="Line" name="line_7">
@@ -4815,24 +4631,11 @@
      <string>Класс</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="character_class">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>20</y>
-      <width>171</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QLineEdit" name="armorpenalty_4">
     <property name="geometry">
      <rect>
       <x>205</x>
-      <y>583</y>
+      <y>582</y>
       <width>21</width>
       <height>23</height>
      </rect>
@@ -4842,7 +4645,7 @@
     <property name="geometry">
      <rect>
       <x>205</x>
-      <y>634</y>
+      <y>633</y>
       <width>21</width>
       <height>23</height>
      </rect>
@@ -5018,132 +4821,483 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="item_for_speed">
+   <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>437</x>
-      <y>290</y>
-      <width>21</width>
-      <height>21</height>
+      <x>260</x>
+      <y>400</y>
+      <width>291</width>
+      <height>191</height>
      </rect>
     </property>
+    <property name="title">
+     <string>Пункты здоровья</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+    <widget class="QLabel" name="bloodied">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>30</y>
+       <width>40</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="surge_value">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>30</y>
+       <width>40</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="surges_per_day">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>30</y>
+       <width>40</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="current_HP">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>90</y>
+       <width>60</width>
+       <height>40</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="max_HP_2">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>90</y>
+       <width>60</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>17</x>
+       <y>14</y>
+       <width>71</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>6</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Максимум ПЗ</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>83</x>
+       <y>14</y>
+       <width>71</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>6</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Порог ранения</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>148</x>
+       <y>13</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>6</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Значение лечения</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>223</x>
+       <y>13</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>6</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Лечений в день</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>66</x>
+       <y>70</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Текущие ПЗ</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>156</x>
+       <y>69</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Максимум ПЗ</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="max_HP">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>31</y>
+       <width>40</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
    </widget>
-   <widget class="QLineEdit" name="base_speed">
+   <widget class="QGroupBox" name="groupBox_3">
     <property name="geometry">
      <rect>
-      <x>393</x>
-      <y>290</y>
-      <width>21</width>
-      <height>21</height>
+      <x>260</x>
+      <y>270</y>
+      <width>291</width>
+      <height>131</height>
      </rect>
     </property>
+    <property name="title">
+     <string>Прочие параметры</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+    <widget class="QLineEdit" name="lineEdit_27">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>100</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_47">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>95</y>
+       <width>41</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="misc_speed">
+     <property name="geometry">
+      <rect>
+       <x>191</x>
+       <y>24</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="speed_sum">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>22</y>
+       <width>23</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sk_perc_sum_2">
+     <property name="geometry">
+      <rect>
+       <x>239</x>
+       <y>63</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_45">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>57</y>
+       <width>41</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="PP_sum">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>61</y>
+       <width>23</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_21">
+     <property name="geometry">
+      <rect>
+       <x>47</x>
+       <y>100</y>
+       <width>161</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Пассивная проницательность</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="armor_penalty">
+     <property name="geometry">
+      <rect>
+       <x>147</x>
+       <y>24</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_38">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>18</y>
+       <width>41</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="PI_sum">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>99</y>
+       <width>23</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ten_2">
+     <property name="geometry">
+      <rect>
+       <x>212</x>
+       <y>99</y>
+       <width>23</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string>10</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="item_for_speed">
+     <property name="geometry">
+      <rect>
+       <x>169</x>
+       <y>24</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_19">
+     <property name="geometry">
+      <rect>
+       <x>47</x>
+       <y>23</y>
+       <width>75</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Скорость</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_20">
+     <property name="geometry">
+      <rect>
+       <x>47</x>
+       <y>62</y>
+       <width>161</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Пассивная внимательность</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="base_speed">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>24</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ten">
+     <property name="geometry">
+      <rect>
+       <x>211</x>
+       <y>62</y>
+       <width>23</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string>10</string>
+     </property>
+    </widget>
    </widget>
-   <widget class="QLineEdit" name="misc_speed">
+   <widget class="Line" name="line_6">
     <property name="geometry">
      <rect>
-      <x>459</x>
-      <y>290</y>
-      <width>21</width>
-      <height>21</height>
+      <x>544</x>
+      <y>400</y>
+      <width>16</width>
+      <height>211</height>
      </rect>
     </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
    </widget>
-   <widget class="QLineEdit" name="armor_penalty">
+   <widget class="Line" name="line_8">
     <property name="geometry">
      <rect>
-      <x>415</x>
-      <y>290</y>
-      <width>21</width>
-      <height>21</height>
+      <x>253</x>
+      <y>401</y>
+      <width>16</width>
+      <height>211</height>
      </rect>
     </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
    </widget>
-   <widget class="QLineEdit" name="sk_perc_sum_2">
+   <widget class="Line" name="line_3">
     <property name="geometry">
      <rect>
-      <x>507</x>
-      <y>329</y>
-      <width>21</width>
-      <height>21</height>
+      <x>260</x>
+      <y>600</y>
+      <width>291</width>
+      <height>20</height>
      </rect>
     </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_26">
-    <property name="geometry">
-     <rect>
-      <x>610</x>
-      <y>390</y>
-      <width>21</width>
-      <height>21</height>
-     </rect>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_27">
-    <property name="geometry">
-     <rect>
-      <x>508</x>
-      <y>366</y>
-      <width>21</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
-   <zorder>label_47</zorder>
-   <zorder>label_45</zorder>
-   <zorder>char_name</zorder>
-   <zorder>stats</zorder>
-   <zorder>label_2</zorder>
-   <zorder>LvL</zorder>
-   <zorder>skills</zorder>
-   <zorder>st_dex_mod</zorder>
-   <zorder>pushButton_7</zorder>
-   <zorder>st_dex_misc</zorder>
-   <zorder>st_dex_origin</zorder>
-   <zorder>st_dex_all</zorder>
-   <zorder>groupBox</zorder>
-   <zorder>line_2</zorder>
-   <zorder>line_3</zorder>
-   <zorder>line_4</zorder>
-   <zorder>label_38</zorder>
-   <zorder>speed_sum</zorder>
-   <zorder>pushButton_19</zorder>
-   <zorder>PP_sum</zorder>
-   <zorder>pushButton_20</zorder>
-   <zorder>pushButton_21</zorder>
-   <zorder>PI_sum</zorder>
-   <zorder>ten</zorder>
-   <zorder>ten_2</zorder>
-   <zorder>line_5</zorder>
-   <zorder>line_6</zorder>
-   <zorder>line_7</zorder>
-   <zorder>label_52</zorder>
-   <zorder>character_class</zorder>
-   <zorder>armorpenalty_4</zorder>
-   <zorder>armorpenalty_5</zorder>
-   <zorder>sk_misc_7</zorder>
-   <zorder>sk_misc_8</zorder>
-   <zorder>sk_misc_19</zorder>
-   <zorder>sk_misc_9</zorder>
-   <zorder>sk_misc_6</zorder>
-   <zorder>sk_misc_11</zorder>
-   <zorder>sk_misc_10</zorder>
-   <zorder>sk_misc_13</zorder>
-   <zorder>sk_misc_12</zorder>
-   <zorder>sk_misc_16</zorder>
-   <zorder>sk_misc_21</zorder>
-   <zorder>sk_misc_15</zorder>
-   <zorder>sk_misc_14</zorder>
-   <zorder>sk_misc_17</zorder>
-   <zorder>sk_misc_18</zorder>
-   <zorder>sk_misc_22</zorder>
-   <zorder>sk_misc_20</zorder>
-   <zorder>item_for_speed</zorder>
-   <zorder>base_speed</zorder>
-   <zorder>misc_speed</zorder>
-   <zorder>armor_penalty</zorder>
-   <zorder>sk_perc_sum_2</zorder>
-   <zorder>lineEdit_26</zorder>
-   <zorder>lineEdit_27</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

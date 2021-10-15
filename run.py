@@ -73,6 +73,13 @@ class God:
         self.ui.st_cha_origin.textChanged.connect(self.st_Cha_Calc)
         self.ui.st_cha_misc.textChanged.connect(self.st_Cha_Calc)
 
+        self.ui.max_HP.textChanged.connect(self.misc_HP_Calc)
+        self.ui.bloodied.textChanged.connect(self.misc_HP_Calc)
+        self.ui.surge_value.textChanged.connect(self.misc_HP_Calc)
+        self.ui.surges_per_day.textChanged.connect(self.misc_HP_Calc)
+        self.ui.current_HP.textChanged.connect(self.misc_HP_Calc)
+        self.ui.max_HP_2.textChanged.connect(self.misc_HP_Calc)
+
         # --- Костыле-инициализация ---
         self.ui.st_str_origin.setText('8')
         self.ui.st_dex_origin.setText('8')
@@ -86,6 +93,10 @@ class God:
         self.st_Int_Calc()
         self.st_Wis_Calc()
         self.st_Cha_Calc()
+
+    #    self.ui.max_HP.setText('0')
+    #    self.misc_HP_Calc()
+
 
     # Функции подсчёта статов
     def st_Str_Calc(self):
@@ -158,6 +169,18 @@ class God:
         except BaseException:
             pass
         pass
+
+# Попытка в подсчёт показателей здоровья
+    def misc_HP_Calc(self):
+        try:
+            self.ui.bloodied.setText(
+                str(int(self.max_HP.text()) / int(2))
+                )
+        except BaseException:
+            pass
+        pass
+
+
 # Созадём основной класс для взаимосвязи приложения
 god = God()
 
