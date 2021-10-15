@@ -1,85 +1,211 @@
-class Hero:
-    def __init__(self, god):
-        self.god = god
-        self.name = god.ui.char_name.text()
-        self.vlv = 1
-        self.class_level = {}
-        self.armor_type = 'light'
-        self.armor_class = 10
+# --- Шесть Базовых Атрибутов ---
 
-        self.str = 10
-        self.str_misc = 0
-        self.str_mod = 0
-        self.str_all = 10
-        self.dex = 10
-        self.dex_misc = 0
-        self.dex_mod = 0
-        self.dex_all = 10
-        self.con = 10
-        self.con_misc = 0
-        self.con_mod = 0
-        self.con_all = 10
-        self.int = 10
-        self.int_misc = 0
-        self.int_mod = 0
-        self.int_all = 10
-        self.wis = 10
-        self.wis_misc = 0
-        self.wis_mod = 0
-        self.wis_all = 10
-        self.cha = 10
-        self.cha_misc = 0
-        self.cha_mod = 0
-        self.cha_all = 10
+class Atribute:
+    # Родительский класс для атрибутов
+    def __init__(self, sheet): # Функция, ВСЕГДА вызываемся один раз при создании класса.
+        self.sheet = sheet
+        self.origin = 10
+        self.misc = 0
+        self.all = 0
+        self.mod = 0
+        self.tooltip = 'noToolTip'
 
-    def setArmorClass(self):
-        ac = self.armor_type
-        if ac == 'light':
-            self.armor_class = self.dex_mod + 10 # Базовая формула, другие будут позже
+    def calc(self):
+        # Функция рассчёта
+        pass
 
-    def setStr(self,):
-                # org=int(self.god.ui.st_str_all.text()),
-                # misc=int(self.god.ui.st_str_misc.text()),
-                # mod=int(self.god.ui.st_str_mod.text()),
-                # all=int(self.god.ui.st_str_all.text())):
-        self.str = org
-        self.str_misc = misc
-        self.str_mod = mod
-        self.str_all = all
+    def roll(self):
+        # Функция броска
+        pass
 
-    def setDex(self):
-        self.dex = int(self.god.ui.st_dex_all.text())
-        self.dex_misc = int(self.god.ui.st_dex_misc.text())
-        self.dex_mod = int(self.god.ui.st_dex_mod.text())
-        self.dex_all = int(self.god.ui.st_dex_all.text())
+class Str(Atribute): # Наследуем класс: Класс(Родитель)
+    def __init__(self, sheet):
+        super().__init__(sheet) # Эта строка означает, что мы ОБНОВЛЯЕМ функцию
+        # Т.е. всё, что было в классе родителя остаётся неизменным, если мы это не изменили здесь
+        # Это значит, что мы не обязаны писать self.mod = 0 каждый раз, ибо это делает родитель
+        # Что сильно укорачивает код от повторного написания.
 
-    def setCon(self):
-        self.con = int(self.god.ui.st_con_all.text())
-        self.con_misc = int(self.god.ui.st_con_misc.text())
-        self.con_mod = int(self.god.ui.st_con_mod.text())
-        self.con_all = int(self.god.ui.st_con_all.text())
+        # Привязываем поля интерфейса к классу, чтобы обновлять данные по мере их изменения.
+        self.sheet.ui.st_str_origin.textChanged.connect(self.calc)
+        self.sheet.ui.st_str_misc.textChanged.connect(self.calc)
+        self.sheet.ui.st_str_origin.setText(str(self.origin))
+        # Вызываем первичный Calc, чтобы сгенерировать описания для ячеек.
+        self.calc()
 
-    def setInt(self):
-        self.int = int(self.god.ui.st_int_all.text())
-        self.int_misc = int(self.god.ui.st_int_misc.text())
-        self.int_mod = int(self.god.ui.st_int_mod.text())
-        self.int_all = int(self.god.ui.st_int_all.text())
+    def calc(self):
+        super().calc()
+        # Получаем
+        self.origin = int(self.sheet.ui.st_str_origin.text())
+        self.misc = int(self.sheet.ui.st_str_misc.text())
+        # Считаем
+        self.all = self.origin + self.misc
+        self.mod = self.sheet.help[self.all]
+        # Записываем
+        self.sheet.ui.st_str_all.setText(str(self.all))
+        self.sheet.ui.st_str_mod.setText(str(self.mod))
+        # Обновляем всплывающие подсказки-описания
+        self.sheet.ui.st_str_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.origin} + {self.misc} = {self.all}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
 
-    def setWis(self):
-        self.wis = int(self.god.ui.st_wis_all.text())
-        self.wis_misc = int(self.god.ui.st_wis_misc.text())
-        self.wis_mod = int(self.god.ui.st_wis_mod.text())
-        self.wis_all = int(self.god.ui.st_wis_all.text())
+class Dex(Atribute): # Наследуем класс: Класс(Родитель)
+    def __init__(self, sheet):
+        super().__init__(sheet) # Эта строка означает, что мы ОБНОВЛЯЕМ функцию
+        # Т.е. всё, что было в классе родителя остаётся неизменным, если мы это не изменили здесь
+        # Это значит, что мы не обязаны писать self.mod = 0 каждый раз, ибо это делает родитель
+        # Что сильно укорачивает код от повторного написания.
 
-    def setCha(self):
-        self.cha = int(self.god.ui.st_cha_all.text())
-        self.cha_misc = int(self.god.ui.st_cha_misc.text())
-        self.cha_mod = int(self.god.ui.st_cha_mod.text())
-        self.cha_all = int(self.god.ui.st_cha_all.text())
+        # Привязываем поля интерфейса к классу, чтобы обновлять данные по мере их изменения.
+        self.sheet.ui.st_dex_origin.textChanged.connect(self.calc)
+        self.sheet.ui.st_dex_misc.textChanged.connect(self.calc)
+        self.sheet.ui.st_dex_origin.setText(str(self.origin))
+        # Вызываем первичный Calc, чтобы сгенерировать описания для ячеек.
+        self.calc()
+
+    def calc(self):
+        super().calc()
+        # Получаем
+        self.origin = int(self.sheet.ui.st_dex_origin.text())
+        self.misc = int(self.sheet.ui.st_dex_misc.text())
+        # Считаем
+        self.all = self.origin + self.misc
+        self.mod = self.sheet.help[self.all]
+        # Записываем
+        self.sheet.ui.st_dex_all.setText(str(self.all))
+        self.sheet.ui.st_dex_mod.setText(str(self.mod))
+        # Обновляем всплывающие подсказки-описания
+        self.sheet.ui.st_dex_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.origin} + {self.misc} = {self.all}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
+
+class Con(Atribute): # Наследуем класс: Класс(Родитель)
+    def __init__(self, sheet):
+        super().__init__(sheet) # Эта строка означает, что мы ОБНОВЛЯЕМ функцию
+        # Т.е. всё, что было в классе родителя остаётся неизменным, если мы это не изменили здесь
+        # Это значит, что мы не обязаны писать self.mod = 0 каждый раз, ибо это делает родитель
+        # Что сильно укорачивает код от повторного написания.
+
+        # Привязываем поля интерфейса к классу, чтобы обновлять данные по мере их изменения.
+        self.sheet.ui.st_con_origin.textChanged.connect(self.calc)
+        self.sheet.ui.st_con_misc.textChanged.connect(self.calc)
+        self.sheet.ui.st_con_origin.setText(str(self.origin))
+        # Вызываем первичный Calc, чтобы сгенерировать описания для ячеек.
+        self.calc()
+
+    def calc(self):
+        super().calc()
+        # Получаем
+        self.origin = int(self.sheet.ui.st_con_origin.text())
+        self.misc = int(self.sheet.ui.st_con_misc.text())
+        # Считаем
+        self.all = self.origin + self.misc
+        self.mod = self.sheet.help[self.all]
+        # Записываем
+        self.sheet.ui.st_con_all.setText(str(self.all))
+        self.sheet.ui.st_con_mod.setText(str(self.mod))
+        # Обновляем всплывающие подсказки-описания
+        self.sheet.ui.st_con_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.origin} + {self.misc} = {self.all}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
+
+class Int(Atribute): # Наследуем класс: Класс(Родитель)
+    def __init__(self, sheet):
+        super().__init__(sheet) # Эта строка означает, что мы ОБНОВЛЯЕМ функцию
+        # Т.е. всё, что было в классе родителя остаётся неизменным, если мы это не изменили здесь
+        # Это значит, что мы не обязаны писать self.mod = 0 каждый раз, ибо это делает родитель
+        # Что сильно укорачивает код от повторного написания.
+
+        # Привязываем поля интерфейса к классу, чтобы обновлять данные по мере их изменения.
+        self.sheet.ui.st_int_origin.textChanged.connect(self.calc)
+        self.sheet.ui.st_int_misc.textChanged.connect(self.calc)
+        self.sheet.ui.st_int_origin.setText(str(self.origin))
+        # Вызываем первичный Calc, чтобы сгенерировать описания для ячеек.
+        self.calc()
+
+    def calc(self):
+        super().calc()
+        # Получаем
+        self.origin = int(self.sheet.ui.st_int_origin.text())
+        self.misc = int(self.sheet.ui.st_int_misc.text())
+        # Считаем
+        self.all = self.origin + self.misc
+        self.mod = self.sheet.help[self.all]
+        # Записываем
+        self.sheet.ui.st_int_all.setText(str(self.all))
+        self.sheet.ui.st_int_mod.setText(str(self.mod))
+        # Обновляем всплывающие подсказки-описания
+        self.sheet.ui.st_int_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.origin} + {self.misc} = {self.all}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
+
+class Wis(Atribute): # Наследуем класс: Класс(Родитель)
+    def __init__(self, sheet):
+        super().__init__(sheet) # Эта строка означает, что мы ОБНОВЛЯЕМ функцию
+        # Т.е. всё, что было в классе родителя остаётся неизменным, если мы это не изменили здесь
+        # Это значит, что мы не обязаны писать self.mod = 0 каждый раз, ибо это делает родитель
+        # Что сильно укорачивает код от повторного написания.
+
+        # Привязываем поля интерфейса к классу, чтобы обновлять данные по мере их изменения.
+        self.sheet.ui.st_wis_origin.textChanged.connect(self.calc)
+        self.sheet.ui.st_wis_misc.textChanged.connect(self.calc)
+        self.sheet.ui.st_wis_origin.setText(str(self.origin))
+        # Вызываем первичный Calc, чтобы сгенерировать описания для ячеек.
+        self.calc()
+
+    def calc(self):
+        super().calc()
+        # Получаем
+        self.origin = int(self.sheet.ui.st_wis_origin.text())
+        self.misc = int(self.sheet.ui.st_wis_misc.text())
+        # Считаем
+        self.all = self.origin + self.misc
+        self.mod = self.sheet.help[self.all]
+        # Записываем
+        self.sheet.ui.st_wis_all.setText(str(self.all))
+        self.sheet.ui.st_wis_mod.setText(str(self.mod))
+        # Обновляем всплывающие подсказки-описания
+        self.sheet.ui.st_wis_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.origin} + {self.misc} = {self.all}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
+
+class Cha(Atribute): # Наследуем класс: Класс(Родитель)
+    def __init__(self, sheet):
+        super().__init__(sheet) # Эта строка означает, что мы ОБНОВЛЯЕМ функцию
+        # Т.е. всё, что было в классе родителя остаётся неизменным, если мы это не изменили здесь
+        # Это значит, что мы не обязаны писать self.mod = 0 каждый раз, ибо это делает родитель
+        # Что сильно укорачивает код от повторного написания.
+
+        # Привязываем поля интерфейса к классу, чтобы обновлять данные по мере их изменения.
+        self.sheet.ui.st_cha_origin.textChanged.connect(self.calc)
+        self.sheet.ui.st_cha_misc.textChanged.connect(self.calc)
+        self.sheet.ui.st_cha_origin.setText(str(self.origin))
+        # Вызываем первичный Calc, чтобы сгенерировать описания для ячеек.
+        self.calc()
+
+    def calc(self):
+        super().calc()
+        # Получаем
+        self.origin = int(self.sheet.ui.st_cha_origin.text())
+        self.misc = int(self.sheet.ui.st_cha_misc.text())
+        # Считаем
+        self.all = self.origin + self.misc
+        self.mod = self.sheet.help[self.all]
+        # Записываем
+        self.sheet.ui.st_cha_all.setText(str(self.all))
+        self.sheet.ui.st_cha_mod.setText(str(self.mod))
+        # Обновляем всплывающие подсказки-описания
+        self.sheet.ui.st_cha_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.origin} + {self.misc} = {self.all}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# --- Навыки ---
 
 class Skill:
-    def __init__(self, god):
-        self.god = god
+    def __init__(self, sheet):
+        self.sheet = sheet
         self.name = 'name'
         self.all = 0
         self.mod = 0
@@ -87,20 +213,20 @@ class Skill:
         self.armor_penalty = 0
         self.misc = 0
 class Acrobatic(Skill):
-    def __init__(self, god):
-        super().__init__(god)
+    def __init__(self, sheet):
+        super().__init__(sheet)
         self.name = 'Акробатика'
         self.calc()
 
     def calc(self):
-        self.mod = int(self.god.ui.st_dex_mod.text()) + int(self.god.ui.LvL.text())//2 # CALC
-        if self.god.ui.istrained.isChecked():
+        self.mod = int(self.sheet.ui.st_dex_mod.text()) + int(self.sheet.ui.LvL.text())//2 # CALC
+        if self.sheet.ui.istrained.isChecked():
             self.inst = 5
-        self.armor_penalty = int(self.god.ui.armorpenalty.text())
-        self.misc = int(self.god.ui.sk_misc.text())
+        self.armor_penalty = int(self.sheet.ui.armorpenalty.text())
+        self.misc = int(self.sheet.ui.sk_misc.text())
         self.all = self.mod + self.inst + self.armor_penalty + self.misc
         try:
-            self.god.ui.dex_mod_here.setText(str(self.mod))
-            self.god.ui.sk_acr_sum.setText(str(self.all))
+            self.sheet.ui.dex_mod_here.setText(str(self.mod))
+            self.sheet.ui.sk_acr_sum.setText(str(self.all))
         except BaseException:
             pass
