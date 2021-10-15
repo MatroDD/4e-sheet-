@@ -18,6 +18,10 @@ class Atribute:
         # Функция броска
         pass
 
+    def call(self):
+        # Функция вызова calc() для тех, кто зависим от этого атрибута.
+        pass
+
 class Str(Atribute): # Наследуем класс: Класс(Родитель)
     def __init__(self, sheet):
         super().__init__(sheet) # Эта строка означает, что мы ОБНОВЛЯЕМ функцию
@@ -32,11 +36,15 @@ class Str(Atribute): # Наследуем класс: Класс(Родител�
         # Вызываем первичный Calc, чтобы сгенерировать описания для ячеек.
         self.calc()
 
+
     def calc(self):
         super().calc()
         # Получаем
-        self.origin = int(self.sheet.ui.st_str_origin.text())
-        self.misc = int(self.sheet.ui.st_str_misc.text())
+        try: # Вход в блок отлова исключений.
+            self.origin = int(self.sheet.ui.st_str_origin.text())
+            self.misc = int(self.sheet.ui.st_str_misc.text())
+        except BaseException:
+            pass
         # Считаем
         self.all = self.origin + self.misc
         self.mod = self.sheet.help[self.all]
@@ -45,6 +53,7 @@ class Str(Atribute): # Наследуем класс: Класс(Родител�
         self.sheet.ui.st_str_mod.setText(str(self.mod))
         # Обновляем всплывающие подсказки-описания
         self.sheet.ui.st_str_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.origin} + {self.misc} = {self.all}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
+        # Вызываем пересчёт зависимых объектов
 
 class Dex(Atribute): # Наследуем класс: Класс(Родитель)
     def __init__(self, sheet):
@@ -60,11 +69,21 @@ class Dex(Atribute): # Наследуем класс: Класс(Родител�
         # Вызываем первичный Calc, чтобы сгенерировать описания для ячеек.
         self.calc()
 
+    def call(self):
+        super().call()
+        try:
+            self.sheet.sk_acr.calc()
+        except BaseException:
+            pass
+
     def calc(self):
         super().calc()
         # Получаем
-        self.origin = int(self.sheet.ui.st_dex_origin.text())
-        self.misc = int(self.sheet.ui.st_dex_misc.text())
+        try: # Вход в блок отлова исключений.
+            self.origin = int(self.sheet.ui.st_dex_origin.text())
+            self.misc = int(self.sheet.ui.st_dex_misc.text())
+        except BaseException: # Блок действий на отловленное исключение. В нашем случае - ничего.
+            pass
         # Считаем
         self.all = self.origin + self.misc
         self.mod = self.sheet.help[self.all]
@@ -73,6 +92,7 @@ class Dex(Atribute): # Наследуем класс: Класс(Родител�
         self.sheet.ui.st_dex_mod.setText(str(self.mod))
         # Обновляем всплывающие подсказки-описания
         self.sheet.ui.st_dex_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.origin} + {self.misc} = {self.all}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
+        self.call()
 
 class Con(Atribute): # Наследуем класс: Класс(Родитель)
     def __init__(self, sheet):
@@ -91,8 +111,11 @@ class Con(Atribute): # Наследуем класс: Класс(Родител�
     def calc(self):
         super().calc()
         # Получаем
-        self.origin = int(self.sheet.ui.st_con_origin.text())
-        self.misc = int(self.sheet.ui.st_con_misc.text())
+        try: # Вход в блок отлова исключений.
+            self.origin = int(self.sheet.ui.st_con_origin.text())
+            self.misc = int(self.sheet.ui.st_con_misc.text())
+        except BaseException:
+            pass
         # Считаем
         self.all = self.origin + self.misc
         self.mod = self.sheet.help[self.all]
@@ -119,8 +142,11 @@ class Int(Atribute): # Наследуем класс: Класс(Родител�
     def calc(self):
         super().calc()
         # Получаем
-        self.origin = int(self.sheet.ui.st_int_origin.text())
-        self.misc = int(self.sheet.ui.st_int_misc.text())
+        try: # Вход в блок отлова исключений.
+            self.origin = int(self.sheet.ui.st_int_origin.text())
+            self.misc = int(self.sheet.ui.st_int_misc.text())
+        except BaseException:
+            pass
         # Считаем
         self.all = self.origin + self.misc
         self.mod = self.sheet.help[self.all]
@@ -147,8 +173,11 @@ class Wis(Atribute): # Наследуем класс: Класс(Родител�
     def calc(self):
         super().calc()
         # Получаем
-        self.origin = int(self.sheet.ui.st_wis_origin.text())
-        self.misc = int(self.sheet.ui.st_wis_misc.text())
+        try: # Вход в блок отлова исключений.
+            self.origin = int(self.sheet.ui.st_wis_origin.text())
+            self.misc = int(self.sheet.ui.st_wis_misc.text())
+        except BaseException:
+            pass
         # Считаем
         self.all = self.origin + self.misc
         self.mod = self.sheet.help[self.all]
@@ -175,8 +204,11 @@ class Cha(Atribute): # Наследуем класс: Класс(Родител�
     def calc(self):
         super().calc()
         # Получаем
-        self.origin = int(self.sheet.ui.st_cha_origin.text())
-        self.misc = int(self.sheet.ui.st_cha_misc.text())
+        try: # Вход в блок отлова исключений.
+            self.origin = int(self.sheet.ui.st_cha_origin.text())
+            self.misc = int(self.sheet.ui.st_cha_misc.text())
+        except BaseException:
+            pass
         # Считаем
         self.all = self.origin + self.misc
         self.mod = self.sheet.help[self.all]

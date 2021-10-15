@@ -21,13 +21,17 @@ class Sheet:
             11:0, 12:1, 13:1, 14:2, 15:2, 16:3, 17:3, 18:4, 19:4, 20:5,
             21:5, 22:6, 23:6, 24:7, 25:7, 26:8, 27:8, 28:9, 29:9, 30:10, 31:10}
 
+        self.lvl = int(self.ui.lvl.text())
         # Создаём классы атрибутов
-        self.str = cls.Str(self)
-        self.dex = cls.Dex(self)
-        self.con = cls.Con(self)
-        self.int = cls.Int(self)
-        self.wis = cls.Wis(self)
-        self.cha = cls.Cha(self)
+        self.st_str = cls.Str(self)
+        self.st_dex = cls.Dex(self)
+        self.st_con = cls.Con(self)
+        self.st_int = cls.Int(self)
+        self.st_wis = cls.Wis(self)
+        self.st_cha = cls.Cha(self)
+
+        # Создаём классы навыков
+        self.sk_acr = cls.Acrobatic(self)
 
         # --- Connect ---
         # Добавляем к полям ввода статов и модификаторов событие "если изменён текст"

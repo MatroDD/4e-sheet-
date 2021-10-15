@@ -813,6 +813,9 @@
      <property name="text">
       <string/>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QPushButton" name="sk_heal_button">
      <property name="geometry">
@@ -898,6 +901,9 @@
      <property name="text">
       <string/>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QPushButton" name="sk_perc_button">
      <property name="geometry">
@@ -958,6 +964,9 @@
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="sk_athl_button">
@@ -1020,6 +1029,9 @@
      <property name="text">
       <string/>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="sk_int_sum">
      <property name="geometry">
@@ -1056,6 +1068,9 @@
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="sk_hist_button">
@@ -1160,6 +1175,9 @@
      <property name="text">
       <string/>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="sk_street_sum">
      <property name="geometry">
@@ -1196,6 +1214,9 @@
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="sk_stealth_button">
@@ -1258,6 +1279,9 @@
      <property name="text">
       <string/>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="sk_dung_sum">
      <property name="geometry">
@@ -1294,6 +1318,9 @@
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="sk_arc_sum">
@@ -1332,6 +1359,9 @@
      <property name="text">
       <string/>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="sk_acr_sum">
      <property name="geometry">
@@ -1369,6 +1399,9 @@
      <property name="text">
       <string/>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="sk_nat_sum">
      <property name="geometry">
@@ -1405,6 +1438,9 @@
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="sk_rel_button">
@@ -1521,6 +1557,9 @@
      <property name="text">
       <string/>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QPushButton" name="sk_acr_button">
      <property name="geometry">
@@ -1609,6 +1648,9 @@
      <property name="text">
       <string/>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="sk_ins_sum">
      <property name="geometry">
@@ -1645,6 +1687,9 @@
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="sk_int_button">
@@ -1755,6 +1800,9 @@
      <property name="text">
       <string/>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="sk_rel_sum">
      <property name="geometry">
@@ -1791,6 +1839,9 @@
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="sk_end_mod">
@@ -1829,6 +1880,9 @@
      <property name="text">
       <string/>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="sk_stealth_mod">
      <property name="geometry">
@@ -1865,6 +1919,9 @@
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="sk_perc_mod">
@@ -1903,6 +1960,9 @@
      <property name="text">
       <string/>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="sk_rel_mod">
      <property name="geometry">
@@ -1939,6 +1999,9 @@
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="sk_athl_mod">
@@ -1977,6 +2040,9 @@
      <property name="text">
       <string/>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="sk_dung_mod">
      <property name="geometry">
@@ -2013,6 +2079,9 @@
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="sk_bluff_mod">
@@ -2051,6 +2120,9 @@
      <property name="text">
       <string/>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="sk_arc_mod">
      <property name="geometry">
@@ -2087,6 +2159,9 @@
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="sk_nat_mod">
@@ -2125,6 +2200,9 @@
      <property name="text">
       <string/>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="sk_heal_mod">
      <property name="geometry">
@@ -2161,6 +2239,9 @@
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="sk_dipl_mod">
@@ -2199,6 +2280,9 @@
      <property name="text">
       <string/>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="sk_int_mod">
      <property name="geometry">
@@ -2235,6 +2319,9 @@
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="sk_street_mod">
@@ -2273,6 +2360,9 @@
      <property name="text">
       <string/>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="sk_thief_mod">
      <property name="geometry">
@@ -2309,6 +2399,9 @@
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="sk_ins_mod">
@@ -2347,6 +2440,9 @@
      <property name="text">
       <string/>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="sk_acr_mod">
      <property name="geometry">
@@ -2384,6 +2480,9 @@
      <property name="text">
       <string/>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="sk_hist_mod">
      <property name="geometry">
@@ -2420,6 +2519,9 @@
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QCheckBox" name="sk_acr_istrained">
@@ -5593,22 +5695,6 @@ p, li { white-space: pre-wrap; }
       <string notr="true"/>
      </property>
     </widget>
-   </widget>
-   <widget class="QFrame" name="frame">
-    <property name="geometry">
-     <rect>
-      <x>630</x>
-      <y>170</y>
-      <width>120</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
