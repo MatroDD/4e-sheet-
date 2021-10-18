@@ -38,6 +38,15 @@ class st_Str(Atribute): # Наследуем класс: Класс(Родите
         # Вызываем первичный Calc, чтобы сгенерировать описания для ячеек.
         self.calc()
 
+    def call(self):
+        super().call()
+        try:
+            # Атлетика
+            self.sheet.sk_athl.calc()
+            pass
+        except BaseException:
+            pass
+
     def calc(self):
         super().calc()
         # Получаем
@@ -55,6 +64,7 @@ class st_Str(Atribute): # Наследуем класс: Класс(Родите
         # Обновляем всплывающие подсказки-описания
         self.sheet.ui.st_str_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.origin} + {self.misc} = {self.all}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
         # Вызываем пересчёт зависимых объектов
+        self.call()
 
 class st_Dex(Atribute): # Наследуем класс: Класс(Родитель)
     def __init__(self, sheet):
@@ -73,7 +83,10 @@ class st_Dex(Atribute): # Наследуем класс: Класс(Родите
     def call(self):
         super().call()
         try:
+            # Акробатика, Воровство, Скрытность
             self.sheet.sk_acr.calc()
+            self.sheet.sk_thief.calc()
+            self.sheet.sk_stealth.calc()
         except BaseException:
             pass
 
@@ -109,6 +122,15 @@ class st_Con(Atribute): # Наследуем класс: Класс(Родите
         # Вызываем первичный Calc, чтобы сгенерировать описания для ячеек.
         self.calc()
 
+    def call(self):
+        super().call()
+        try:
+            # Выносливость
+            self.sheet.sk_end.calc()
+            pass
+        except BaseException:
+            pass
+
     def calc(self):
         super().calc()
         # Получаем
@@ -125,6 +147,7 @@ class st_Con(Atribute): # Наследуем класс: Класс(Родите
         self.sheet.ui.st_con_mod.setText(str(self.mod))
         # Обновляем всплывающие подсказки-описания
         self.sheet.ui.st_con_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.origin} + {self.misc} = {self.all}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
+        self.call()
 
 class st_Int(Atribute): # Наследуем класс: Класс(Родитель)
     def __init__(self, sheet):
@@ -139,6 +162,17 @@ class st_Int(Atribute): # Наследуем класс: Класс(Родите
         self.sheet.ui.st_int_origin.setText(str(self.origin))
         # Вызываем первичный Calc, чтобы сгенерировать описания для ячеек.
         self.calc()
+
+    def call(self):
+        super().call()
+        try:
+            # Магия, История, Религия
+            self.sheet.sk_arc.calc()
+            self.sheet.sk_hist.calc()
+            self.sheet.sk_rel.calc()
+            pass
+        except BaseException:
+            pass
 
     def calc(self):
         super().calc()
@@ -156,6 +190,7 @@ class st_Int(Atribute): # Наследуем класс: Класс(Родите
         self.sheet.ui.st_int_mod.setText(str(self.mod))
         # Обновляем всплывающие подсказки-описания
         self.sheet.ui.st_int_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.origin} + {self.misc} = {self.all}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
+        self.call()
 
 class st_Wis(Atribute): # Наследуем класс: Класс(Родитель)
     def __init__(self, sheet):
@@ -170,6 +205,19 @@ class st_Wis(Atribute): # Наследуем класс: Класс(Родите
         self.sheet.ui.st_wis_origin.setText(str(self.origin))
         # Вызываем первичный Calc, чтобы сгенерировать описания для ячеек.
         self.calc()
+
+    def call(self):
+        super().call()
+        try:
+            # Подземелье, Природа, Проницательность, Целительство, Восприятие
+            self.sheet.sk_dung.calc()
+            self.sheet.sk_nat.calc()
+            self.sheet.sk_heal.calc()
+            self.sheet.sk_ins.calc()
+            self.sheet.sk_perc.calc()
+            pass
+        except BaseException:
+            pass
 
     def calc(self):
         super().calc()
@@ -187,6 +235,7 @@ class st_Wis(Atribute): # Наследуем класс: Класс(Родите
         self.sheet.ui.st_wis_mod.setText(str(self.mod))
         # Обновляем всплывающие подсказки-описания
         self.sheet.ui.st_wis_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.origin} + {self.misc} = {self.all}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
+        self.call()
 
 class st_Cha(Atribute): # Наследуем класс: Класс(Родитель)
     def __init__(self, sheet):
@@ -201,6 +250,18 @@ class st_Cha(Atribute): # Наследуем класс: Класс(Родите
         self.sheet.ui.st_cha_origin.setText(str(self.origin))
         # Вызываем первичный Calc, чтобы сгенерировать описания для ячеек.
         self.calc()
+
+    def call(self):
+        super().call()
+        try:
+            # Запугивание, Знание Улиц, Обман, Дипломатия
+            self.sheet.sk_bluff.calc()
+            self.sheet.sk_dipl.calc()
+            self.sheet.sk_street.calc()
+            self.sheet.sk_int.calc()
+            pass
+        except BaseException:
+            pass
 
     def calc(self):
         super().calc()
@@ -218,3 +279,4 @@ class st_Cha(Atribute): # Наследуем класс: Класс(Родите
         self.sheet.ui.st_cha_mod.setText(str(self.mod))
         # Обновляем всплывающие подсказки-описания
         self.sheet.ui.st_cha_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.origin} + {self.misc} = {self.all}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
+        self.call()
