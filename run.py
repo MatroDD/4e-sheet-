@@ -23,14 +23,15 @@ class Sheet:
 
         self.lvl = int(self.ui.lvl.text())
         # Создаём классы атрибутов
-        self.st_str = cls.st_Str(self)
-        self.st_dex = cls.st_Dex(self)
-        self.st_con = cls.st_Con(self)
-        self.st_int = cls.st_Int(self)
-        self.st_wis = cls.st_Wis(self)
-        self.st_cha = cls.st_Cha(self)
+        self.st_str = cls.Str(self)
+        self.st_dex = cls.Dex(self)
+        self.st_con = cls.Con(self)
+        self.st_int = cls.Int(self)
+        self.st_wis = cls.Wis(self)
+        self.st_cha = cls.Cha(self)
 
         # Создаём классы навыков
+<<<<<<< HEAD
         self.sk_acr = cls.sk_Acr(self)
         self.sk_arc = cls.sk_Arc(self)
         self.sk_athl = cls.sk_Athl(self)
@@ -48,6 +49,9 @@ class Sheet:
         self.sk_stealth = cls.sk_Stealth(self)
         self.sk_street = cls.sk_Street(self)
         self.sk_thief = cls.sk_Thief(self)
+=======
+        self.sk_acr = cls.Acrobatic(self)
+>>>>>>> parent of bd19e3a (Мелкие изменения)
 
         # --- Connect ---
         # Добавляем к полям ввода статов и модификаторов событие "если изменён текст"

@@ -21,7 +21,7 @@ class Skill:
     def roll(self):
         pass
 
-class sk_Acr(Skill):
+class Acrobatic(Skill):
     def __init__(self, sheet):
         super().__init__(sheet)
         # Привязываем галку владения

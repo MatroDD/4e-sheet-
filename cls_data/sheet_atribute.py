@@ -20,11 +20,9 @@ class Atribute:
 
     def call(self):
         # Функция вызова calc() для тех, кто зависим от этого атрибута.
-        # ВСЕГДА вызывайте зависимые объекты внутри блока try
-        # Иначе словите Error404: "Зависимый объект ещё не существует"
         pass
 
-class st_Str(Atribute): # Наследуем класс: Класс(Родитель)
+class Str(Atribute): # Наследуем класс: Класс(Родитель)
     def __init__(self, sheet):
         super().__init__(sheet) # Эта строка означает, что мы ОБНОВЛЯЕМ функцию
         # Т.е. всё, что было в классе родителя остаётся неизменным, если мы это не изменили здесь
@@ -38,6 +36,7 @@ class st_Str(Atribute): # Наследуем класс: Класс(Родите
         # Вызываем первичный Calc, чтобы сгенерировать описания для ячеек.
         self.calc()
 
+<<<<<<< HEAD
     def call(self):
         super().call()
         try:
@@ -46,6 +45,8 @@ class st_Str(Atribute): # Наследуем класс: Класс(Родите
             pass
         except BaseException:
             pass
+=======
+>>>>>>> parent of bd19e3a (Мелкие изменения)
 
     def calc(self):
         super().calc()
@@ -66,7 +67,7 @@ class st_Str(Atribute): # Наследуем класс: Класс(Родите
         # Вызываем пересчёт зависимых объектов
         self.call()
 
-class st_Dex(Atribute): # Наследуем класс: Класс(Родитель)
+class Dex(Atribute): # Наследуем класс: Класс(Родитель)
     def __init__(self, sheet):
         super().__init__(sheet) # Эта строка означает, что мы ОБНОВЛЯЕМ функцию
         # Т.е. всё, что было в классе родителя остаётся неизменным, если мы это не изменили здесь
@@ -108,7 +109,7 @@ class st_Dex(Atribute): # Наследуем класс: Класс(Родите
         self.sheet.ui.st_dex_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.origin} + {self.misc} = {self.all}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
         self.call()
 
-class st_Con(Atribute): # Наследуем класс: Класс(Родитель)
+class Con(Atribute): # Наследуем класс: Класс(Родитель)
     def __init__(self, sheet):
         super().__init__(sheet) # Эта строка означает, что мы ОБНОВЛЯЕМ функцию
         # Т.е. всё, что было в классе родителя остаётся неизменным, если мы это не изменили здесь
@@ -149,7 +150,7 @@ class st_Con(Atribute): # Наследуем класс: Класс(Родите
         self.sheet.ui.st_con_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.origin} + {self.misc} = {self.all}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
         self.call()
 
-class st_Int(Atribute): # Наследуем класс: Класс(Родитель)
+class Int(Atribute): # Наследуем класс: Класс(Родитель)
     def __init__(self, sheet):
         super().__init__(sheet) # Эта строка означает, что мы ОБНОВЛЯЕМ функцию
         # Т.е. всё, что было в классе родителя остаётся неизменным, если мы это не изменили здесь
@@ -192,7 +193,7 @@ class st_Int(Atribute): # Наследуем класс: Класс(Родите
         self.sheet.ui.st_int_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.origin} + {self.misc} = {self.all}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
         self.call()
 
-class st_Wis(Atribute): # Наследуем класс: Класс(Родитель)
+class Wis(Atribute): # Наследуем класс: Класс(Родитель)
     def __init__(self, sheet):
         super().__init__(sheet) # Эта строка означает, что мы ОБНОВЛЯЕМ функцию
         # Т.е. всё, что было в классе родителя остаётся неизменным, если мы это не изменили здесь
@@ -237,7 +238,7 @@ class st_Wis(Atribute): # Наследуем класс: Класс(Родите
         self.sheet.ui.st_wis_all.setToolTip(f'<html><head/><body><p><span style=" font-weight:600;">Итоговый стат:</span> {self.origin} + {self.misc} = {self.all}<br/><span style=" font-weight:600;">Формула:</span> &lt;БазовыйСтат&gt; + &lt;ВременныйМод&gt; = &lt;ИтоговыйСтат&gt;</p></body></html>'),
         self.call()
 
-class st_Cha(Atribute): # Наследуем класс: Класс(Родитель)
+class Cha(Atribute): # Наследуем класс: Класс(Родитель)
     def __init__(self, sheet):
         super().__init__(sheet) # Эта строка означает, что мы ОБНОВЛЯЕМ функцию
         # Т.е. всё, что было в классе родителя остаётся неизменным, если мы это не изменили здесь
