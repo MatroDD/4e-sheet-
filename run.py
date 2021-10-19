@@ -32,6 +32,22 @@ class Sheet:
 
         # Создаём классы навыков
         self.sk_acr = cls.sk_Acr(self)
+        self.sk_arc = cls.sk_Arc(self)
+        self.sk_athl = cls.sk_Athl(self)
+        self.sk_bluff = cls.sk_Bluff(self)
+        self.sk_dipl = cls.sk_Dipl(self)
+        self.sk_dung = cls.sk_Dung(self)
+        self.sk_end = cls.sk_End(self)
+        self.sk_heal = cls.sk_Heal(self)
+        self.sk_hist = cls.sk_Hist(self)
+        self.sk_ins = cls.sk_Ins(self)
+        self.sk_int = cls.sk_Int(self)
+        self.sk_nat = cls.sk_Nat(self)
+        self.sk_perc = cls.sk_Perc(self)
+        self.sk_rel = cls.sk_Rel(self)
+        self.sk_stealth = cls.sk_Stealth(self)
+        self.sk_street = cls.sk_Street(self)
+        self.sk_thief = cls.sk_Thief(self)
 
         # --- Connect ---
         # Добавляем к полям ввода статов и модификаторов событие "если изменён текст"
