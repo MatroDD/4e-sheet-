@@ -22,6 +22,7 @@ class Sheet:
             21:5, 22:6, 23:6, 24:7, 25:7, 26:8, 27:8, 28:9, 29:9, 30:10, 31:10}
 
         self.lvl = int(self.ui.lvl.text())
+
         # Создаём классы атрибутов
         self.st_str = cls.Str(self)
         self.st_dex = cls.Dex(self)
@@ -59,6 +60,15 @@ class Sheet:
 
         self.ui.max_HP.setText('0')
         self.misc_HP_Calc()
+
+    # Отладчик: Числовые поля
+    # Возвращает 0, если строка не является числом.
+    def debuggerNumeric(self, tar):
+        try:
+            result = int(tar)
+        except ValueError:
+            result = 0
+        return result
 
 # Попытка в подсчёт показателей здоровья
     def misc_HP_Calc(self):
