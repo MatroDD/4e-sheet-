@@ -1,14 +1,16 @@
 # --- Шесть Базовых Атрибутов ---
+from random import randint
 
 class Atribute:
     # Родительский класс для атрибутов
     def __init__(self, sheet): # Функция, ВСЕГДА вызываемся один раз при создании класса.
         self.sheet = sheet
-        self.origin = 10
-        self.misc = 0
-        self.all = 0
-        self.mod = 0
-        self.tooltip = 'noToolTip'
+        self.origin = 10 # Изначальное значение.
+        self.misc = 0 # Временные модификаторы.
+        self.all = 0 # Общее/итоговое значение.
+        self.mod = 0 # Модификатор.
+        self.tooltip = 'noToolTip' # Всплывающая подсказка.
+        self.rolltip = {} # Используется для генерации текста бросков.
 
     def calc(self):
         # Функция рассчёта
@@ -16,6 +18,17 @@ class Atribute:
 
     def roll(self):
         # Функция броска
+        self.rolltip['randint'] = randint(1, 20) # Кидаем 1d20
+        if self.rolltip['randint'] == 1: # Если выпало 1
+            self.rolltip['color'] = '#aa0000' # Красный
+        elif self.rolltip['randint'] == 20: # Если выпало 20
+            self.rolltip['color'] = '#00aa00' # Зелёный
+        else: # Иначе
+            self.rolltip['color'] = '#000000' # Чёрный
+        self.rolltip['result'] = self.rolltip['randint'] + self.mod
+
+        # Написать результаты броска в чат.
+        self.sheet.ui.chat.append(f'''<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600; font-style:italic;">бросок </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600;">{self.rolltip['what']}:</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8pt;"> 1d20</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600;">[</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600; color:{self.rolltip['color']};">{self.rolltip['randint']}</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600;">]</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8pt;"> +{self.rolltip['what']}.Мод</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600;">[{self.mod}]</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8pt;"> = {self.rolltip['result']}</span></p>''')
         pass
 
     def call(self):
@@ -35,6 +48,10 @@ class Str(Atribute): # Наследуем класс: Класс(Родител�
         self.sheet.ui.st_str_origin.setText(str(self.origin))
         # Вызываем первичный Calc, чтобы сгенерировать описания для ячеек.
         self.calc()
+
+        self.rolltip['what'] = 'СИЛ' # Текст для бросков
+        # Привязываем кнопку с текстом навыка к функции броска
+        self.sheet.ui.st_str_button.clicked.connect(self.roll)
 
     def call(self):
         super().call()
