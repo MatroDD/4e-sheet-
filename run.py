@@ -1,6 +1,6 @@
 # --- Импорты ---
 import sys
-from PySide2 import QtCore, QtGui, QtWidgets
+from PyQt5 import QtCore, QtGui, QtWidgets
 from ui import Ui_MainWindow
 import cls
 
@@ -31,7 +31,6 @@ class Sheet:
         self.st_cha = cls.Cha(self)
 
         # Создаём классы навыков
-<<<<<<< HEAD
         self.sk_acr = cls.sk_Acr(self)
         self.sk_arc = cls.sk_Arc(self)
         self.sk_athl = cls.sk_Athl(self)
@@ -49,9 +48,6 @@ class Sheet:
         self.sk_stealth = cls.sk_Stealth(self)
         self.sk_street = cls.sk_Street(self)
         self.sk_thief = cls.sk_Thief(self)
-=======
-        self.sk_acr = cls.Acrobatic(self)
->>>>>>> parent of bd19e3a (Мелкие изменения)
 
         # --- Connect ---
         # Добавляем к полям ввода статов и модификаторов событие "если изменён текст"
