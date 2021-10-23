@@ -1,5 +1,12 @@
 # --- Импорты ---
-import sys
+import sys, os
+
+# Включим потом. Не трогать.
+# scriptdir, script = os.path.split(__file__)
+# installdir = scriptdir  # for compatibility with commands
+# pkgdir = os.path.join(scriptdir, 'Python310/Lib/site-packages')
+# sys.path.insert(0, pkgdir)
+
 from PyQt5 import QtCore, QtGui, QtWidgets
 from ui import Ui_MainWindow
 import cls
