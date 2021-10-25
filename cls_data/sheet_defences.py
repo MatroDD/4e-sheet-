@@ -38,7 +38,8 @@ class def_Fort(Defence):
         # Получаем
         self.ten_and_halflevel = 10 + self.sheet.lvl // 2
         # Выбираем наибольший атрибут.
-        # Функция max() или min() принимает [сипсок] или (кортеж) чисел.
+        # Функция max() или min() принимает в себя числа, через апятую.
+        # min(1, 2, 10, 49...)
         # Возвращает наибольшее или наименьшее соответственно.
         self.ability = max(self.sheet.st_str.mod, self.sheet.st_con.mod)
         self.clas = int(self.sheet.ui.def_fort_class.text())
