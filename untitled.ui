@@ -4220,7 +4220,7 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="ten_and_halflevel_2">
+    <widget class="QLabel" name="def_fort_ten_and_halflevel">
      <property name="geometry">
       <rect>
        <x>128</x>
