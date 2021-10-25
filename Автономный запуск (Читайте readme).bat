@@ -1,0 +1,1 @@
+Python310\Pythonw.exe run.py
