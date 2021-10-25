@@ -27,8 +27,6 @@ class def_Fort(Defence):
         # Зависим от: Сила, Выносливость
 
         # Привязываем
-        # self.sheet.ui.def_fort_ability.textChanged.connect(self.calc)
-
         self.sheet.ui.def_fort_class.textChanged.connect(self.calc)
         self.sheet.ui.def_fort_feat.textChanged.connect(self.calc)
         self.sheet.ui.def_fort_enh.textChanged.connect(self.calc)
@@ -50,6 +48,11 @@ class def_Fort(Defence):
         self.misc = int(self.sheet.ui.def_fort_misc.text())
 
         # Считаем
+        # sum() позволяет узнать сумму всех объектов, поданных в него.
+        # Подавать можно итерируемые объекты. Т.е. [списки] или (кортежи).
+        # Зачем оно тут? Позволяет разбить длинную строку x = A + B + C + D + E
+        # В более понятный и удобный для чтения вариант - построчно, через запятую.
+        # Крайне удобно, когда суммировать нужно дохуя длинных строк.
         self.sum = sum([
             self.ten_and_halflevel,
             self.ability,
