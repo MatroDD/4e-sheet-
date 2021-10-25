@@ -82,7 +82,6 @@
      <property name="font">
       <font>
        <pointsize>8</pointsize>
-       <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
@@ -130,7 +129,6 @@
      <property name="font">
       <font>
        <pointsize>8</pointsize>
-       <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
@@ -246,7 +244,6 @@
      <property name="font">
       <font>
        <pointsize>8</pointsize>
-       <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
@@ -294,7 +291,6 @@
      <property name="font">
       <font>
        <pointsize>8</pointsize>
-       <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
@@ -342,7 +338,6 @@
      <property name="font">
       <font>
        <pointsize>8</pointsize>
-       <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
@@ -390,7 +385,6 @@
      <property name="font">
       <font>
        <pointsize>8</pointsize>
-       <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
@@ -438,7 +432,6 @@
      <property name="font">
       <font>
        <pointsize>8</pointsize>
-       <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
@@ -486,7 +479,6 @@
      <property name="font">
       <font>
        <pointsize>8</pointsize>
-       <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
@@ -534,7 +526,6 @@
      <property name="font">
       <font>
        <pointsize>8</pointsize>
-       <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
@@ -582,7 +573,6 @@
      <property name="font">
       <font>
        <pointsize>8</pointsize>
-       <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
@@ -651,9 +641,39 @@
     </property>
     <property name="palette">
      <palette>
-      <active/>
-      <inactive/>
-      <disabled/>
+      <active>
+       <colorrole role="Highlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>120</green>
+          <blue>215</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Highlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>240</red>
+          <green>240</green>
+          <blue>240</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Highlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>120</green>
+          <blue>215</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
      </palette>
     </property>
     <property name="toolTip">
@@ -3972,7 +3992,6 @@
     <property name="font">
      <font>
       <pointsize>8</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -4052,7 +4071,6 @@
     <property name="font">
      <font>
       <pointsize>8</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -4218,7 +4236,7 @@
       <string/>
      </property>
     </widget>
-    <widget class="QLabel" name="FORT_sum">
+    <widget class="QLabel" name="def_fort_sum">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -4242,7 +4260,7 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_11">
+    <widget class="QPushButton" name="def_fort_button">
      <property name="geometry">
       <rect>
        <x>52</x>
@@ -4516,7 +4534,7 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLineEdit" name="feat_bonus_fort">
+    <widget class="QLineEdit" name="def_fort_feat">
      <property name="geometry">
       <rect>
        <x>197</x>
@@ -4532,7 +4550,7 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLineEdit" name="enh_bonus_fort">
+    <widget class="QLineEdit" name="def_fort_enh">
      <property name="geometry">
       <rect>
        <x>219</x>
@@ -4548,7 +4566,7 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLineEdit" name="ability_bonus_fort">
+    <widget class="QLineEdit" name="def_fort_ability">
      <property name="geometry">
       <rect>
        <x>153</x>
@@ -4564,7 +4582,7 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLineEdit" name="class_bonus_fort">
+    <widget class="QLineEdit" name="def_fort_class">
      <property name="geometry">
       <rect>
        <x>175</x>
@@ -4580,7 +4598,7 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLineEdit" name="misc_bonus_fort">
+    <widget class="QLineEdit" name="def_fort_misc">
      <property name="geometry">
       <rect>
        <x>241</x>
@@ -5595,11 +5613,11 @@
      </property>
      <property name="html">
       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; font-style:italic;&quot;&gt;бросок &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Сила:&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; 1d20&lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; color:#aa0000;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;]&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; +СИЛ.Мод&lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;[3]&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; = 4&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; font-style:italic;&quot;&gt;бросок&lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt; Сила:&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; 1d20&lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; color:#00aa00;&quot;&gt;20&lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;]&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; +СИЛ.Мод&lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;[3]&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; = 23&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600; font-style:italic;&quot;&gt;бросок &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600;&quot;&gt;Сила:&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt; 1d20&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600; color:#aa0000;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600;&quot;&gt;]&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt; +СИЛ.Мод&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600;&quot;&gt;[3]&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt; = 4&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600; font-style:italic;&quot;&gt;бросок&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600;&quot;&gt; Сила:&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt; 1d20&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600; color:#00aa00;&quot;&gt;20&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600;&quot;&gt;]&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt; +СИЛ.Мод&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600;&quot;&gt;[3]&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt; = 23&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="placeholderText">
       <string notr="true"/>
@@ -5672,7 +5690,7 @@ p, li { white-space: pre-wrap; }
      <x>0</x>
      <y>0</y>
      <width>1021</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
