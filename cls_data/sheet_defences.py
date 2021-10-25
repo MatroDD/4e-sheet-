@@ -37,11 +37,10 @@ class def_Fort(Defence):
     def calc(self):
         # Получаем
         self.ten_and_halflevel = 10 + self.sheet.lvl // 2
-        # Узнаём, какой зависимый атрибут больше и добавляем наивысший.
-        if self.sheet.st_str.mod > self.sheet.st_con.mod:
-            self.ability = self.sheet.st_str.mod
-        else:
-            self.ability = self.sheet.st_con.mod
+        # Выбираем наибольший атрибут.
+        # Функция max() или min() принимает [сипсок] или (кортеж) чисел.
+        # Возвращает наибольшее или наименьшее соответственно.
+        self.ability = max(self.sheet.st_str.mod, self.sheet.st_con.mod)
         self.clas = int(self.sheet.ui.def_fort_class.text())
         self.feat = int(self.sheet.ui.def_fort_feat.text())
         self.enh = int(self.sheet.ui.def_fort_enh.text())
