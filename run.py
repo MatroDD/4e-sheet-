@@ -57,6 +57,9 @@ class Sheet:
         self.sk_street = cls.sk_Street(self)
         self.sk_thief = cls.sk_Thief(self)
 
+        # Создаём классы защит
+        self.def_fort = cls.def_Fort(self)
+
         # --- Connect ---
         # Добавляем к полям ввода статов и модификаторов событие "если изменён текст"
         # Тут же привязываем это событие к функции

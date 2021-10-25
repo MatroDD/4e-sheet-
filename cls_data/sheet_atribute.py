@@ -56,8 +56,9 @@ class Str(Atribute): # Наследуем класс: Класс(Родител�
     def call(self):
         super().call()
         try:
-            # Атлетика
+            # Атлетика, Стойкость
             self.sheet.sk_athl.calc()
+            self.sheet.def_fort.calc()
             pass
         except BaseException:
             pass
@@ -148,8 +149,9 @@ class Con(Atribute): # Наследуем класс: Класс(Родител�
     def call(self):
         super().call()
         try:
-            # Выносливость
+            # Выносливость, Стойкость
             self.sheet.sk_end.calc()
+            self.sheet.def_fort.calc()
             pass
         except BaseException:
             pass
