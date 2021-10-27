@@ -5,10 +5,10 @@ import sys, os
 # Так же убедитесь - что перед строкой нет пробелов.
 # Чтобы выключить - верните символ # обратно.
 # --- Начало ---
-# scriptdir, script = os.path.split(__file__)
-# installdir = scriptdir  # for compatibility with commands
-# pkgdir = os.path.join(scriptdir, 'Python310/Lib/site-packages')
-# sys.path.insert(0, pkgdir)
+scriptdir, script = os.path.split(__file__)
+installdir = scriptdir  # for compatibility with commands
+pkgdir = os.path.join(scriptdir, 'Python310/Lib/site-packages')
+sys.path.insert(0, pkgdir)
 # --- Конец ---
 
 from PyQt5 import QtCore, QtGui, QtWidgets
